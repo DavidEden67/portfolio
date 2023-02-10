@@ -1,0 +1,22 @@
+  animation-iteration-count: 2;
+
+
+<div class="cardcontainer"><img class="galleryImg" src="https://www.google.com/logos/doodles/2014/2014-winter-olympics-5710368030588928-hp.jpg"></div>
+
+
+.cardcontainer img {
+	animation: zoominoutsinglefeatured 1s infinite ;
+}
+
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
