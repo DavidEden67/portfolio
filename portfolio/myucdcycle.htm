@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<!-- disable zooming on the touch device -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; ">
+
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+
+<!-- disable contect menue on mobile devices. -->
+<style>
+body { -webkit-touch-callout: none !important; }
+a { -webkit-user-select: none !important; }
+
+</style>
+
+
+
+
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="_css/main.css">
+<link rel="stylesheet" href="_css/myucd.css">
+ <link rel="stylesheet" href="_css/navripple.css">
+ <link rel="stylesheet" href="_css/imagemap.css">
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<style>
+
+#square {
+    width: 10px;
+    height: 10px;
+    margin: 0; /*for centering purposes*/
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: blue;
+      
+  transition:  1.2s cubic-bezier(1, 0.04, 0.66, 1.5);;
+}
+#square:hover {
+
+    height: 400px;
+  
+
+ 
+}
+.test {
+  
+    width: 30px;
+    height: 10px;
+    border: 1px solid red;
+}
+
+</style>
+
+
+
+<style type="text/css">
+.style1 {
+				text-align: center;
+}
+</style>
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - My UCD Cycle</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);">
+
+
+
+<!-- page scroll down indicator These must all appear together after the body tag -->
+<div class="progress-wrap" title="Back to Top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" >
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+
+  <link rel="stylesheet" href="_scrollprogress/backtotop.css">
+ 	<script type="text/javascript"  src="_scrollprogress/backtotop.js"></script>
+ <script src='_scrollprogress/jquery.min.js'></script>
+
+<!-- END page scroll down indicator These must all appear together after the body tag -->
+
+
+
+<div class="top-container" style="left: 0px; top: 0px">
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" style="padding-top: 2px " alt="" src="_images/uxw.png" width="94" height="64" align="bottom"></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" class="selected" >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);" >My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 600);"><nobr>Home</nobr></a></span></a>
+  <a  href="javascript:void(0)"   ><span class="ripple"><a style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'mydesignphilosophy.htm';}, 600);" ><nobr>My Design Thinking</nobr></a></span></a>
+  <a href="javascript:void(0)"   ><span class="ripple"><a onclick=" setTimeout(function(){window.location.href = 'myucdcycle.htm';}, 600);" class="linkselected" ><nobr>My UCD Cycle</nobr></a></span></a>
+ 
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+<div class="content">
+
+<p class="pagetitle">My UCD Cycle</p>
+
+
+<p>Product development has changed substantially over the past few years 
+		with the adoption of Agile Methodology. I have been refining my own User-Centered Design cycle to help 
+Agile teams 
+		become more successful at delivering products that the Product Owner and 
+the end users find useful as well as easy to use. The 
+User Experience discipline can adapt very well to Agile development by 
+conducting early&nbsp;user research during the Planning Phase and by validating design concepts with 
+users during the Design Phase. I have been able to contribute to the entire 
+product lifecycle by combining my research and my design background.</p>
+<p>
+		Please click below for an interactive overview of the process that I 
+		follow to merge UCD with Agile. </p>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+<!-- my procerss overview animation -->
+
+
+<div id="divparent" style="text-align: center;  height: 86px;background:inherit; position:relative;   transition:  1.2s cubic-bezier(1, 0.04, 0.66, 1.5);  ">
+
+<div  id="divtext" style="line-height: 100%;   left: calc( 50% - 70px); top: calc( 15% + 75px);   position:absolute; background:transparent ;line-height: 130%; ;  width: 160px; opacity: 0;  transition: 1s ease-in-out; font-size:13px; text-align:left;  z-index:100  " > </div>
+
+
+<div id="divclick" style="transition: .5s ease-in-out; font-size:14px; z-index :700;  left: 40%; top: 0px;   position:absolute; background:inherit;   opacity: 1;  transition: 1s ease-in-out; font-size:14px; text-align:left; height: 100%; width: 264px;" > 
+<img style="cursor:pointer" title="David's approach to Agile Development" alt="" onclick="document.getElementById('divclick').style.display='none'  ;document.getElementById('divparent').style.height='450px';	setTimeout(function(){document.getElementById('menu-toggler').checked = true; }, 2000);" src="_images/click.png" width="92" height="86"></div>
+
+
+
+ <input  class='menu-toggler' id='menu-toggler' type='checkbox' onclick ="if (document.getElementById('menu-toggler').checked) {document.getElementById('divparent').style.height='450px'} else {document.getElementById('divparent').style.height='86px'; ;	setTimeout(function(){document.getElementById('divclick').style.display = 'block'; }, 2000)} " style="left: 0; right: 0; top: 0; bottom: 0">
+  <label style="z-index:600;transition: 1s ease-in-out; "   id="labelmenu" for='menu-toggler'></label>
+  <ul >
+  <!-- UAT -->
+      <li class='menu-item'>
+      <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I work with the Agile team and QA during the build phase. This ensures that I can monitor any usability issues during the build phase and make decisions about Severity 1, 2, and 3 issues that may affect the usability of the product.'" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-10deg) translate(-2px, 10px) "     target='_blank'>User Acceptance Testing</a>
+
+    </li>
+    
+    
+    
+    <!-- post release -->
+    <li class='menu-item'>
+      <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I gather feedback from end users through surveys and direct contact after the product is released. Often this is the best source for gathering new requirements for the next release and addressing user pain points.'" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-50deg) translate(-12px, 10px) "     target='_blank'>Post-Release Feedback</a>
+
+    </li>
+    
+    
+    
+    <!-- Define Problems -->
+    <li  class='menu-item'   >
+      <a   onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I work with the Product Owner and the stakeholders to define design problems from the business perspective. I also conduct early user interviews to ensure that design problems are defined and prioritized from the user perspective. '" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1';" style="transform: rotate(-90deg) translate(-15px, 0px) "   target='_blank'>Define Problem Statements &#9654 </a>
+      
+      
+      
+      <!-- Define Personas -->
+    </li>
+    <li class='menu-item'>
+        <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I define the personas early on to ensure that the design will be holistic. This is especially important if various users complete the process through a workflow. User research often discovers that each persona faces unique challenges within the workflow. '" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-130deg) translate(-15px, -20px) "     target='_blank'>Personas</a>
+    </li>
+    
+    
+    <!-- define user goals -->
+    <li class='menu-item'>
+        <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I create a spreadsheet of personas (Actors) and user goals. This helps visualize user and business requirements and the how they relate to each persona (details and examples below). This list is prioritized with the Product Owner and users.'" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-170deg) translate(-5px, -20px) "     target='_blank'>User Goals & Journeys</a>
+        
+        
+        
+        
+      <!-- define use cases -->  
+    </li>
+    <li class='menu-item'>
+    <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I create flowcharts of how various users and the system itself need to interact in order to accomplish each user goal. This helps visualize user tasks and possible error conditions (details and examples below). '" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-209deg) translate(10px, -20px) "     target='_blank'>Use Cases</a>
+    </li>
+    
+    
+    
+    <!-- wireframing and interaction design -->
+        <li class='menu-item'>
+      <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I create wireframes and rich interactive design at this stage in order to validate user and business requirements. I work closely with the Product Owner, Focus Groups, and Subject Matter Experts to get feedback on the initial design concepts.'" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-250deg) translate(12px, -5px) "     target='_blank'>Wireframes & Interaction Design</a>
+
+    </li>
+
+
+<!-- Usability Inspection -->
+             <li class='menu-item'>
+      <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I conduct design walktrhoughs with end users and conduct user testing. This helps ensure that the design addresses requirements and pain points from the end user perspective. '" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-290deg) translate(15px, 5px) "     target='_blank'>Usbility <br>Inspections</a>
+
+    </li>
+    
+    
+
+<!-- UI Spec -->
+        <li class='menu-item'>
+      <a onmouseenter="document.getElementById('labelmenu').style.opacity= '0';  document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I write a detailed User Interface Specification document that describes the behavior of the design. This creates a good reference for developers to clearly understand the intent of the design along with the final design prototype.'" onmouseout=" document.getElementById('divtext').style.opacity= '0'; document.getElementById('labelmenu').style.opacity= '1'; " style ="transform: rotate(-330deg) translate(10px, 10px) "     target='_blank'>User Interface Specifications</a>
+
+    </li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+						 <h4 class=" h4scrollindicator">1. Problem Statements</h4>
+		<p>Problem statements provide a foundation for the start of the project. 
+		They should be continually referenced throughout the duration of the 
+		project to help the team stay focused and on track. It is important to 
+		document the problems that need to be addressed not only from the 
+		perspective of the Product Owner and stakeholders, but also from the 
+		perspective of end users. During the Agile development this also helps ensure 
+		that project stays focused on solving user problems and that items in the 
+		product backlog are addressed accordingly.&nbsp; <br>
+
+
+ </p>
+
+		
+		
+		
+				 <h4 class=" h4scrollindicator">2. Personas</h4>
+		<p>Understanding the end user is the first 
+		step toward creating a good design. I conduct user interviews and contextual 
+		inquiries to help better understand the users and their technical 
+		abilities; their expectations of the 
+		product and their pain points, and their workflow in their work 
+		environment. I create Personas as one of the deliverables at this stage 
+		since it helps the team better understand who will be using the system 
+		and why. For example, a new HR system that I designed included the Manager, 
+		Employee, Human Resources, System Administrators, and Legal as the personas. 
+		Creating personas for each 
+		type of user; their interactions with the proposed system separately 
+		and together, and highlighting their pain points created better awareness of 
+		a holistic and efficient 
+		system for my Agile team.<br>
+
+
+ </p>
+
+
+ <h4 class=" h4scrollindicator">3. User Goals &amp; Journeys</h4>
+		<p>Understanding user motivations and 
+		documenting user goals create the blueprint of a good design. The most beautiful visual design and 
+		the most intuitive user interface will not be very valuable if end users do not find the product useful in the first place. User Goals at this stage are 
+		high level since users themselves think of their goals on a high level. For example, 
+		when I designed the aforementioned HR system, users would describe their 
+		goals to me in terms of <em>I need to create annual performance goals</em> 
+		(employee) or <em>I need to approve performance goals</em> 
+		(manager). I would then document the main user goals and ask questions to 
+		understand more details behind each goal (since each goal could be 
+		further divided into subgoals). The main deliverable at this 
+		stage would be 
+		a prioritized spreadsheet (or table) for <em>Actors</em> and <em>Goals</em> which the 
+		Agile team 
+		can use to 
+		track and make sure that the user goals are all addressed and 
+		prioritized in the design using the 80/20 rule.</p>
+		<p><img ontouchstart="this.classList.add('zoom');" ontouchstart="this.classList.remove('zoom');" class="zoom" alt="" src="_images/goals_matrix.PNG" ></p>
+	
+
+ <h4 class=" h4scrollindicator">4. Use Cases</h4>
+		<p>While user stories and user goals describe the user needs with 
+		the product at a very high level, those goals must be broken down into 
+		specific tasks and steps in order to help users accomplish their goals 
+		in a user interface. 
+		Further, use cases must not only include the end user goals, but they 
+		must also include the business requirements as well as the technical 
+		requirements regarding the product behavior.</p>
+		<p>The use cases must demonstrate how the user steps through clear paths 
+		to accomplish each goal, and what the possible error conditions are and 
+		how to help the users out of those error conditions successfully. Some use cases 
+		apply to all users (e.g., user login) while some apply to only certain 
+		users, and some should be given higher priority than others. I typically deliver a <em>Flowchart</em> or a <em>User Journey</em> 
+		for each use case 
+		that demonstrates how users interact with the system (and each other) to 
+		successfully accomplish each goal. I take the best case scenario, the 
+		worst case scenario, and several other uses cases in between the two 
+		levels of difficulty, and ensure that my design can handle the entire 
+		range of complexity.</p>
+		<p><img ontouchstart="this.classList.add('zoom');" ontouchstart="this.classList.remove('zoom');" class="zoom" alt="" src="_images/flowchart.PNG" ><br>
+		
+		 </p>
+		
+		 <h4 class=" h4scrollindicator">5. Wireframing and Interaction Design</h4>
+		<p>I am skillful at prototyping my designs for the environment in which 
+		the product will be used (Desktop, Mobile, and Web) using 
+		the appropriate platforms such as Bootstrap, CS3, and jQuery. A clear and 
+		detailed interactive design is vital for user validation and Product 
+		Owner approval, for stakeholder demos, for evaluation with subject 
+		matter experts, and to estimate feasibility and the development time by 
+		the lead software developers.</p>
+		<p>Given the fact that UI design is a continuum, my wireframing and 
+		interaction design techniques enable me to evolve the design from wireframes to 
+		highly interactive prototypes very quickly. With the advent of 
+		CSS3, Flexbox and CSS Breakpoints, it is becoming increasingly 
+		important to design the final interaction behavior dynamically rather 
+		than in static design and mockup tools. I have often heard feedback from 
+		development teams that static prototyping tools which do not simulate 
+		the real look &amp; feel of the production code make it difficult for them 
+		to understand the UX design intent, and my web development skills have 
+		helped bridge that gap.<br>
+		
+		 </p>
+		
+		 <h4 class=" h4scrollindicator">6. Usability Inspections</h4>
+		<p>I use a variety of Usability Inspection techniques to evaluate my designs 
+		(depending on the Agile development stage). These include Cognitive 
+		Walkthroughs, Discount Usability 
+		Evaluations (Heuristics), Pluralistic Walkthroughs, and Usability Testing 
+		(both Formative and Summative). The 
+		strengths of my rapid prototyping skills have been key for conducting 
+		early user evaluations to ensure that not only the product 
+		requirements are met from the user perspective, but that the design is 
+		intuitive, learnable, and will have room to grow and adapt in the future. These 
+		usability inspections help catch many user issues early on which 
+		will substantially reduce rework by development teams later in the cycle.<br>
+		
+	
+		 <h4 class=" h4scrollindicator">7. User Interface Specification </h4>
+		<p>Upon the approval of final design, I write clear functional specs for developers since relying on 
+		interactive prototypes alone is not sufficient in order to write detailed code. I define the behavior of the interface through 
+		redlines and control-action-response 
+		tables for developers, and I understand code well enough to be able to 
+		communicate with developers effectively when I describe the interaction 
+		behavior in terms of CSS and HTML attributes and events. </p> 
+		
+	
+		 <h4 class=" h4scrollindicator">8. User Acceptance Testing</h4>
+		<p>It is critical for UX Design to be involved during UAT when the 
+		actual software is being tested, and analyze 
+		direct feedback from users to determine if there are any Severity 1 
+		issues with the product that should prevent it from being released. I 
+		coordinate with the QA to make sure that we can detect, track, 
+		prioritize, and address usability issues that are discovered during UAT.<br>
+		
+		 <h4 class=" h4scrollindicator">9. Post-Release User Feedback</h4>
+		<p>User feedback after each product release should be monitored in order 
+		discover new user requirements and to address any usability issues with 
+		the current release.</p>
+		<p>&nbsp;</p>
+		<div class="style1">
+	
+				<p style="height:50px"></p>
+		<p></p>
+		<p></p>
+		<p>
+		&nbsp;</p>
+	</DIV></DIV>
+
+		
+
+
+
+ 
+
+
+	
+	<script type="text/javascript" src="_javascript/wz_tooltip.js"></script>
+	
+	
+<!-- for adding the responsive image map -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+<!-- for adding the responsive image map -->
+<script  src="_javascript/jquery.rwdImageMaps.js"></script>
+<script  src="_javascript/jquery.rwdImageMaps.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="_javascript/bubble.js"></script>
+
+
+
+</body>
+</html>
