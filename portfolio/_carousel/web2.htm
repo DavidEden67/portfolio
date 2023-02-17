@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<html class=" js csstransforms3d" lang="en">
+
+
+
+<HEAD>
+     
+     
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+
+<style>
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.button2 span:before {
+
+  content: '\00ab ';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0px;
+  transition: 0.5s;
+}
+
+
+.button2:hover span {
+  padding-left: 25px;
+}
+
+.button2:hover span:before {
+  opacity: 1;
+  left: 40;
+}
+</style>
+
+
+
+
+
+
+<!-- Carousel -->
+<script>
+function runsettimeout() {
+document.getElementById('next2').click();
+}
+
+</script>
+
+<script>
+function runsettimeout2() {
+document.getElementById('next').click();
+}
+
+</script>
+
+
+
+
+    <style media="screen">
+
+    .container {
+      width: 210px;
+      height: 140px;
+      position: relative;
+      margin: 0 auto 40px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1100px;
+         -moz-perspective: 1100px;
+           -o-perspective: 1100px;
+              perspective: 1100px;
+    }
+
+    #carousel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform: translateZ( -288px );
+         -moz-transform: translateZ( -288px );
+           -o-transform: translateZ( -288px );
+              transform: translateZ( -288px );
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+    }
+
+    #carousel figure {
+      display: block;
+      position: absolute;
+      width: 186px;
+      height: 116px;
+      left: 10px;
+      top: 10px;
+      border: 1px solid black;
+      line-height: 116px;
+      font-size: 0px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+   
+
+    #carousel figure:nth-child(1) {
+      -webkit-transform: rotateY(   0deg ) translateZ( 288px );
+         -moz-transform: rotateY(   0deg ) translateZ( 288px );
+           -o-transform: rotateY(   0deg ) translateZ( 288px );
+              transform: rotateY(   0deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(2) {
+      -webkit-transform: rotateY(  40deg ) translateZ( 288px );
+         -moz-transform: rotateY(  40deg ) translateZ( 288px );
+           -o-transform: rotateY(  40deg ) translateZ( 288px );
+              transform: rotateY(  40deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(3) {
+      -webkit-transform: rotateY(  80deg ) translateZ( 288px );
+         -moz-transform: rotateY(  80deg ) translateZ( 288px );
+           -o-transform: rotateY(  80deg ) translateZ( 288px );
+              transform: rotateY(  80deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(4) {
+      -webkit-transform: rotateY( 120deg ) translateZ( 288px );
+         -moz-transform: rotateY( 120deg ) translateZ( 288px );
+           -o-transform: rotateY( 120deg ) translateZ( 288px );
+              transform: rotateY( 120deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(5) {
+      -webkit-transform: rotateY( 160deg ) translateZ( 288px );
+         -moz-transform: rotateY( 160deg ) translateZ( 288px );
+           -o-transform: rotateY( 160deg ) translateZ( 288px );
+              transform: rotateY( 160deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(6) {
+      -webkit-transform: rotateY( 200deg ) translateZ( 288px );
+         -moz-transform: rotateY( 200deg ) translateZ( 288px );
+           -o-transform: rotateY( 200deg ) translateZ( 288px );
+              transform: rotateY( 200deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(7) {
+      -webkit-transform: rotateY( 240deg ) translateZ( 288px );
+         -moz-transform: rotateY( 240deg ) translateZ( 288px );
+           -o-transform: rotateY( 240deg ) translateZ( 288px );
+              transform: rotateY( 240deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(8) {
+      -webkit-transform: rotateY( 280deg ) translateZ( 288px );
+         -moz-transform: rotateY( 280deg ) translateZ( 288px );
+           -o-transform: rotateY( 280deg ) translateZ( 288px );
+              transform: rotateY( 280deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(9) {
+      -webkit-transform: rotateY( 320deg ) translateZ( 288px );
+         -moz-transform: rotateY( 320deg ) translateZ( 288px );
+           -o-transform: rotateY( 320deg ) translateZ( 288px );
+              transform: rotateY( 320deg ) translateZ( 288px );
+    }
+
+  .style3 {
+				text-align: center;
+}
+.style4 {
+				background-color: transparent;
+}
+
+  </style>
+
+
+
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!--left nav hover effect-->
+
+<style>
+.underlined-example-wrapper {
+  padding: 21px 20px 19px;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+}
+
+.underlined-example {
+	position: relative;
+	color: #000000;
+	text-decoration: none;
+	font-size: 16px;
+  display:inline-block;
+ 
+}
+
+.underlined-example:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+.underlined-example:before {
+text-decoration: none;
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				bottom: 0;
+				left: 0;
+				background-color: #0000FF;
+				visibility: hidden;
+				-webkit-transition: all 0.3s ease-in-out 0s;
+				-moz-transition: all 0.3s ease-in-out 0s;
+				-o-transition: all 0.3s ease-in-out 0s;
+				transition: all 0.3s ease-in-out 0s;
+				-webkit-transform: scaleX(0);
+				-moz-transform: scaleX(0);
+				-o-transform: scaleX(0);
+				transform: scaleX(0);
+}
+
+.underlined-example:hover:before {
+text-decoration: none;
+height: 1px;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<TITLE>David Eden Portfolio - Welcome</TITLE>
+<!--[if lt IE 6]>
+<link rel="stylesheet" type="text/css" href="_css/ie6.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="_css/ie.css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="_css/ie.css" />
+<![endif]-->
+
+<![if !IE]>
+<link rel="stylesheet" type="text/css" href="_css/FF.css" />
+<![endif]>
+
+
+<style type="text/css">
+.style1 {
+				font-family: "Trebuchet MS";
+				font-size: 16pt;
+}
+.style2 {
+				background-image: url('_images/leftnav.png');
+}
+.style3 {
+				text-align: center;
+				color: #800000;
+}
+.style5 {
+				background-color: #FFFFFF;
+}
+</style>
+
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+
+
+</head>
+<body onload="setTimeout(runsettimeout2, 1000); setTimeout(runsettimeout, 2000);    ">
+<DIV id=topborder style="visibility: visible"> <img border="0" src="_images/toplogo.JPG" width="581" height="70"> </DIV>
+<DIV id=sidebar style="visibility: visible" >
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="0" id="table2">
+	<tr>
+		<td valign="top">
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="0" id="table3" style = "height: 100%">
+	<tr>
+		<td valign="top">
+<table style="width: 100%" class="style2">
+				<tr>
+								<td style="height: 21px"></td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;">
+								<a style=" text-decoration: none; background: rgba(204, 204, 204, 0.3); color:black; padding-left: 5px; padding-right: 5px; cursor: default " class="style4" href="JavaScript: Void(0)">Welcome</a></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;"><a href="design_philosophy.htm" style=" " class="underlined-example">
+								My Design Philosophy</a></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;"><a href="myucd_cycle.htm" style=" " class="underlined-example">
+								My UCD Cycle</a></td>
+				</tr>
+				<tr>
+								<td style="height: 26px"></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 40px;" valign="bottom"><a href="software.htm" style=" " class="underlined-example">
+								Application Design</a></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;"><a href="mobile.htm" style=" " class="underlined-example">
+								Mobile Design</a></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;"><a href="hardware.htm" style=" " class="underlined-example">
+								Hardware Design</a></td>
+				</tr>
+				<tr>
+								<td style="padding-left: 40px; height: 30px;"><a href="web.htm" style=" " class="underlined-example">
+								Web Design</a></td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+				<tr>
+								<td>&nbsp;</td>
+				</tr>
+</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+	</tr>
+</table>
+</DIV>
+<DIV id=content ><A name=overview></A>
+<DIV class="section first">
+<table border="0" width="100%" id="table1" height="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" class="ContenArea">
+		<p style = "margin-bottom: 10px" class="style1">Web Design</p>
+		<p>
+		I have worked as a freelance web designer for the past several years. 
+		While balancing freelance web design with other responsibilities can be 
+		difficult and challenging, the experience on the other hand has been quite invaluable 
+		and rewarding. </p>
+		<p>
+		I have met many interesting customers over the years who have forced me 
+		to think creatively (and work hard for every penny). Freelance web 
+		design has helped me hone my HTML programming and my graphics design 
+		skills in ways that would have been difficult to accomplish in a typical 
+		work environment, and the lessons have helped me become a better UX 
+		designer. It has also forced me to learn graphics programs such as 
+		Photoshop. While I do not consider myself an expert, I hope examples 
+		below demonstrate that I have learned enough Photoshop skills to create 
+		reasonably aesthetic visual designs. I do not create icons from scratch, 
+		but I do refer my customers to
+		<a target="_blank" href="https://www.istockphoto.com/stock-photos">
+		istockphotos.com</a> where beautiful pictures, graphics, and drawings 
+		can be purchased from highly professional graphics designers at very 
+		reasonable prices. </p>
+		<p>
+		I have included below some examples of my freelance websites 
+		during the past few years. I hope you will enjoy viewing them.</p>
+		<p>
+  &nbsp;<p class="style3" ><strong>Please click any thumbnail on the 
+		carousel to see a full size picture. </strong></p>
+	
+	
+	
+	
+
+
+
+
+  		<table style="width: 100%;  border-radius:10px" class="style5">
+						<tr>
+										<td>&nbsp;
+										
+										
+										
+										
+										
+	
+	 <section class="container" style="border: 0px solid white; margin-top: 20px; ">
+    <div id="carousel" style="border: 0px solid white;display: block">
+      <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+						<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>1/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/steff.png'"  style="cursor: pointer; object-fit: cover; object-position: -90 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/steff.png"> </figure>
+      
+          
+
+  <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>2/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/cai.png'"  style="object-fit: cover; object-position: -90 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/cai.png"> </figure>
+           
+
+
+
+
+
+ <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>3/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/asic.png'"  style="object-fit: cover; object-position: -10 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/asic.png"> </figure>
+           
+
+      
+      
+      
+      
+      <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>4/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/kendra.png'"  style="object-fit: cover; object-position: -90 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/kendra.png"> </figure>
+           
+
+      
+         
+    <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>5/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/cyberlynx.png'"  style="object-fit: cover; object-position: -10 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/cyberlynx.png"> </figure>
+
+
+
+      
+      
+    <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>6/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/kim.png'"  style="object-fit: cover; object-position: -90 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/kim.png"> </figure>
+
+
+
+
+   <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>7/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/wct.png'"  style="object-fit: cover; object-position: -0 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/wct.png"> </figure>
+
+
+
+ 
+   <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>8/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/august.png'"  style="object-fit: cover; object-position: -0 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .9" src="_carousel/august.png"> </figure>
+
+
+
+    
+ <figure style=""> 
+		<div style="position: absolute; z-index:150; top: -68px; left: 1px">
+												<span style=" height: 10px; left: 0px; font-size: 16px; background-color: #000000; color:white"><strong>9/9</strong></span></div> <img class="my_popup_open" onclick="document.getElementById('popuppic').src='_carousel/elegantasian.png'"  style="cursor: pointer; object-fit: cover; position: absolute; top: 0; left: 0; max-width: 100%; height: auto; opacity: .9" src="_carousel/elegantasian.png"> </figure>
+           
+
+  
+      </div>
+  </section>
+
+  
+ 
+										
+										
+										
+										
+										
+										</td>
+						</tr>
+						<tr>
+										<td style="vertical-align:top; padding-bottom:30px" align="center" >
+										<section id="options">
+    <p id="navigation">
+     
+            <button class="button2" data-increment="-1" ><span id="previous" data-increment="-1" onmousedown="this.style.color='red'" onmouseup="this.style='inherit'" >Previous</span> </button>
+           
+            
+            
+      <button  class="button" data-increment="1"  ><span id="next" data-increment="1" onmousedown="this.style.color='red'" onmouseup="this.style='inherit'">Next </span> </button>
+      <button style="display:none" id="next2" data-increment="8">Next</button>
+    </p>
+
+  </section>
+										
+										</td>
+						</tr>
+		</table>
+	
+	
+	
+	
+
+
+
+
+  <script src="_carousel/utils.js"></script>
+   <script>
+    var init = function() {
+      var carousel = document.getElementById('carousel'),
+          navButtons = document.querySelectorAll('#navigation button'),
+          panelCount = carousel.children.length,
+          transformProp = Modernizr.prefixed('transform'),
+          theta = 0,
+
+          onNavButtonClick = function( event ){
+            var increment = parseInt( event.target.getAttribute('data-increment') );
+            theta += ( 360 / panelCount ) * increment * -1;
+            carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+          };
+
+      for (var i=0; i < 3; i++) {
+        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+      }
+
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+  </script> 
+
+	
+	
+	
+	
+	
+	
+		<p>&nbsp;</p></tr>
+</table>
+	</DIV></DIV>
+	
+	
+	
+	
+<!-- Include jQuery -->
+  <script src="_carousel/jquery-1.8.2.min.js"></script>
+
+  <!-- Include jQuery Popup Overlay -->
+  <script src="_carousel/jquery.popupoverlay.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+
+<!-- Add content to the popup -->
+  <div  id="my_popup" style="background-color : white; overflow-y: hidden; border : 0px solid black; padding: 0px;width : 70%; height: auto; border: 0px solid black;">
+
+        
+    
+    
+    
+
+  	<table style="width: 100%; height: 100% " class="style4" cellspacing="0" cellpadding="0">
+					<tr>
+									<td style="height: 40px; width: 100%; padding-left: 15px" class="style57">
+									<strong>Customer Websites </strong></td>
+									<td style="padding-right: 15px;height : 40px" class="style56">
+									<img alt="" onclick="document.body.style.overflow = 'visible';" class="my_popup_close" src="_carousel/close_button.png" width="24" height="24"></td>
+					</tr>
+					<tr>
+									<td colspan="2" align="center" style="padding-bottom: 0px;width :100% " valign="bottom" >
+									
+									
+									
+									
+									
+									
+									
+									<img alt="" id="popuppic" src="_carousel/cyberlynx.jpg"  style="margin-bottom: -10px;  object-fit: cover;  max-width:100%;  height:auto"></td>
+					</tr>
+					</table>
+    
+    
+    
+    
+
+  </div>
+	
+	
+	
+	
+	
+	</body>
+	</HTML>
