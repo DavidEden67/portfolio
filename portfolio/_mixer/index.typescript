@@ -1,0 +1,34 @@
+module app {
+  'use strict';
+        
+  class MainController {
+    
+    colorHex: string;
+    colorHsl: string;
+    r: number = 200;
+    g: number = 200;
+    b: number = 200;
+    
+    static $inject = ['$mdDialog'];
+    
+    constructor(private $mdDialog: any) {
+      this.init();
+    }
+    
+    init = () => {
+      this.onColorChange();
+    }
+    
+    onColorChange = () => {
+      let rgbString: string = 'rgb(' + this.r + ',' + 
+          this.g + ',' + this.b + ')';
+      let color = new fabric.Color(rgbString);
+      this.colorHex = '#' + color.toHex();
+      this.colorHsl = color.toHsl();
+    }
+  }
+        
+  angular
+    .module('app', ['ngMaterial'])
+    .controller('MainController', MainController);
+}
