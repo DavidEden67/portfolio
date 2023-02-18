@@ -42,10 +42,25 @@ user-select: none;
 
 
 
-
-
 }
 
+
+
+  .top-container {
+height: 100px;
+padding-top: 20px;
+text-align: center;
+padding-bottom: 0px;
+background: linear-gradient(rgb(224, 224, 224), rgb(204, 204, 204), rgb(176, 176, 176));  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+}
+
+.imglogoimage{
+padding-top: 14px ;
+width: 46px; 
+height: auto; 
+
+				
+}
 
 
 h4.h4scrollindicator{  /* New Instance of h4 for jquery scroll indicator*/
@@ -58,14 +73,6 @@ margin-left: 10px;
 
 
 
-/* this the very top container where the logo appears*/
-.top-container {
-height: 129px;
-padding-top: 20px;
-text-align: center;
-padding-bottom: 2px;
-background: linear-gradient(rgb(224, 224, 224), rgb(204, 204, 204), rgb(176, 176, 176));  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
-}
 
 
 
@@ -106,7 +113,7 @@ margin: 0;
 font-weight: bold ;
  font-family: 'Quicksand', sans-serif;
 color:   #313131;
-font-size:44px;
+font-size:32px;
 text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
              0px 19px 19px rgba(0,0,0,0.1),
              2px 2px 0px rgba(0,0,0,0.1);
@@ -135,8 +142,8 @@ outline: none;
 
 /* New Instance of h3 for the tagline*/
 h3.h3custom {
-margin-bottom:-17px; 
-margin-left: -75px;  
+margin-bottom:-9px; 
+margin-left: -9px;  
 font-size:13px;
  font-family: 'Quicksand', sans-serif;
 
@@ -364,13 +371,6 @@ padding-left: 50px ;
   and (-webkit-min-device-pixel-ratio: 1) 
   and (orientation: portrait){
   
-  .top-container {
-height: 140px;
-padding-top: 20px;
-text-align: center;
-padding-bottom: 2px;
-background: linear-gradient(rgb(224, 224, 224), rgb(204, 204, 204), rgb(176, 176, 176));  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
-}
 
 
 
@@ -396,16 +396,6 @@ ol li {
   and (-webkit-min-device-pixel-ratio: 1) 
   and (orientation: landscape){
  
- .top-container {
-height: 140px;
-padding-top: 20px;
-text-align: center;
-padding-bottom: 2px;
-background: linear-gradient(rgb(224, 224, 224), rgb(204, 204, 204), rgb(176, 176, 176));  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
-left: 0px; 
-top: 0px;
-margin-top: -20px;
-}
 
 
 
