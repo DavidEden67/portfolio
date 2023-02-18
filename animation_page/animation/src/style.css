@@ -1,0 +1,44 @@
+* {
+  font-family: Arial
+}
+
+span.screen-reader {
+  display: block;
+  text-indent: -9999px;
+}
+
+#write:hover {
+  background: black;
+  color: white;
+}
+
+#write,
+#restart,
+#next {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
+  font-weight: bold;
+}
+
+.outer {
+  max-width: 100%;
+  padding: 2rem;
+  height: 100%;
+}
+
+.outer #text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-row button {
+  margin: 1rem !important;
+}
