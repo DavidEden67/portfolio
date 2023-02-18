@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+  <meta charset="UTF-8"/>
+  <title>Please enter password</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+<link rel='stylesheet' href="bootstrap.min.css"/><link rel="stylesheet" href="./style.css"/>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Login Page</title>
+</head>
+<body>
+	<!-- Main Content -->
+	<div class="container-fluid">
+		<div class="row main-content bg-success text-center">
+			<div class="col-md-4 text-center company__info">
+				<span style="display: none" class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
+				<h2 class="company_title"><nobr>David Eden</nobr></h2>
+				<h4 style="margin-top:-1px" class="company_title">
+				<nobr><img alt="" style="margin-bottom:8px; margin-right: -2px" src="uxw.png" width="34" height="auto"/> Design Portfolio</nobr></h4>
+			</div>
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+				<div class="container-fluid">
+					<div class="row">
+						<h2>&nbsp;</h2>
+					</div>
+					<div class="row">
+						<form control="" class="form-group">
+							
+							<div class="row">
+								<!-- <span class="fa fa-lock"></span> -->
+							
+								<input autocomplete="off"  onkeyup=" if (document.getElementById('password').value =='david1') {document.getElementById('submit').style.background='#008080'; document.getElementById('submit').style.color='#fff';   document.getElementById('submit').style.transform='translateY(-15px)';} " onkeydown=" if (document.getElementById('password').value =='david1') {document.getElementById('submit').style.background='red'}   style="min-width:250px"   name="password" id="password" class="form__input" placeholder="Please enter password " />
+						
+							</div>
+							<div class="row" style="padding-bottom:10px">
+								<input id="submit" type="button" value="Submit" class="btn"  onclick=" if (document.getElementById('password').value =='david1') {window.location.href='../index.htm'} else {alert('Please enter the correct password')}"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	
+</body>
+<!-- partial -->
+  
+</body>
+</html>
