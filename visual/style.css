@@ -1,0 +1,217 @@
+﻿/* Tooltip  */
+
+
+
+.tooltips {
+  position: relative;
+  display: inline;
+    cursor: pointer;
+}
+
+.tooltips span {
+  font:300 14px 'Open Sans', sans-serif;
+  position: absolute;
+  color: #FFFFFF;
+  background: #000000;
+  padding:5px 10px;
+  width:180px;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: transform .3s, opacity .6s, margin-left .2s, margin-top .2s;
+
+}
+
+.tooltips > span img{max-width:140px;}
+
+
+
+
+.tooltips span:after {
+  content: '';
+  position: absolute;
+  width: 0; height: 0;
+}
+
+.tooltips[tooltip-position="top"] span:after{
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid black;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+
+.tooltips[tooltip-position="top2"] span:after{
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid black;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+
+
+
+.tooltips[tooltip-position="top"]:hover span{
+  bottom: 55px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+
+
+.tooltips[tooltip-position="top2"]:hover span{
+  bottom: 37px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+
+
+
+.tooltips[tooltip-position="top"] span{
+  margin-left:0px;
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+
+}
+
+
+.tooltips[tooltip-position="top2"] span{
+  margin-left:0px;
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tooltips:hover span {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  filter: alpha(opacity=100);
+}
+
+
+
+
+
+
+.tooltips[tooltip-type="primary"] > span {
+  background-color:#2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="top"] > span:after{
+  border-top: 8px solid #2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="top2"] > span:after{
+  border-top: 8px solid #2980b9;
+}
+
+
+/* Tooltip end*/
+
+:focus {outline:none;}
+
+
+
+
+
+
+/* First Button */
+.borderbutton {
+
+  height: 30px;
+  width: 30px;
+
+  background: transparent;
+  color: white;
+  border: 0px solid;
+  border-color:  #393939;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 200;
+
+  line-height: 30px;
+  
+  
+}
+.borderbutton:hover {
+  border: 2px dashed yellow;
+  color: yellow;
+  border-radius: 50%;
+transition:  .6s cubic-bezier(1, 0.04, 0.66, 1.5); 
+padding-bottom:5px;
+}
+
+.borderbutton:active {
+  background: silver; 
+    transition: all .1s ease;
+    color: white;
+}
+
+
+/* Shadow Button */
+
+.buttonshadow {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  height: 38px; 
+  width: 120px;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.buttonshadow:hover {
+  background-color: #3e8e41;
+  transform: translateY(-3px);
+  color: white;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+  
+}
+
+.buttonshadow:active {
+transform: scale(.95);  
+  -webkit-box-shadow: 0 2px 2px -2px #777;
+	   -moz-box-shadow: 0 2px 2px -2px #777;
+	        box-shadow:  0 2px 2px -2px #777;
+  
+
+}
+
+
+

@@ -1,0 +1,136 @@
+﻿
+
+
+
+
+/*************************************
+ * EXPAND RIGHT
+ */
+
+.ladda-button.expand-left .spinner {
+	left: 0.8em;
+}
+
+
+
+
+
+
+/*************************************
+ * EASING
+ */
+
+.ladda-button,
+.ladda-button .spinner,
+.ladda-button .label {
+	-webkit-transition: 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	   -moz-transition: 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	    -ms-transition: 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	        transition: 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+}
+
+
+\/*************************************
+ * EXPAND RIGHT
+ */
+
+.ladda-button.expand-left .spinner {
+	left: 0.8em;
+}
+
+.ladda-button.expand-left[data-loading] {
+	padding-left: 40px;
+	color:  gray;
+}
+	.ladda-button.expand-left[data-loading] .spinner {
+		opacity: 1;
+	}
+
+
+/*************************************
+
+
+
+/* Green button */
+.ladda-button.green {
+	background: #2aca76;
+	color: #fff;
+	
+	  height: 38px; 
+  width: 120px;
+
+	
+/* BACKGROUND GRADIENTS */
+     background: #014464;
+     background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C)); 
+ 
+
+     /* BORDER RADIUS */
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     border-radius: 10px;
+ 
+     border: 1px solid #368DBE;
+     border-top: 1px solid #c3d6df;
+ 
+ 
+     /* TEXT SHADOW */
+ 
+     text-shadow: 1px 1px 1px black;
+ 
+     /* BOX SHADOW */
+     -moz-box-shadow: 0 1px 3px black;
+     -webkit-box-shadow: 0 1px 3px black;
+     box-shadow: 0 1px 3px black;}
+     
+     
+	.ladda-button.green:hover {
+		border-color: rgba( 0, 0, 0, 0.07 );
+		background-color: #2fe688;
+		color:#FF9900;
+	}
+	.ladda-button.green[data-loading] {
+		border-color: rgba( 0, 0, 0, 0.07 );
+		background-color: #999;
+		color: gray;
+		cursor: wait;
+	}
+
+
+.ladda-button {
+	position: relative;
+	background: none;
+	border: 0;
+	
+	padding: 10px;
+	font-size: 16px;
+	
+	cursor: pointer;
+  outline: 0;
+
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+	.ladda-button[data-loading] {
+	
+		
+		}
+
+
+/* Spinner animation */
+.ladda-button .spinner {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	
+	margin-top: -10px;
+	
+	opacity: 0;
+	  background: url(3.gif);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
