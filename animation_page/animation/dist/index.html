@@ -1,0 +1,234 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta charset="UTF-8">
+  <title>CodePen - Vara.js demo</title>
+  <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
+  
+<!-- keep scroll position -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
+
+  
+  
+  
+  
+  
+  <script>
+function myFunction1() {
+//fire the animation event
+document.getElementById('demo').style.display='block';
+document.getElementById('demo').style.animation = 'mymove 1.5s ease-in'; 
+
+}
+</script>
+
+
+
+<script>
+function myFunction2() {
+//fire the animation event
+document.getElementById('postit1').style.opacity='1'; 
+document.getElementById('postit1').style.transform = 'translateY(115px) translateX(-560px)';
+ 
+
+}
+</script>
+
+
+
+<script>
+function myFunction3() {
+//fire the animation event
+//fire the animation event
+document.getElementById('postit2').style.opacity='1'; 
+document.getElementById('postit2').style.transform = 'translateY(115px) translateX(-370px)';
+       
+}
+</script>
+
+<script>
+function myFunction4() {
+//fire the animation event
+//fire the animation event
+document.getElementById('postit3').style.opacity='1'; 
+document.getElementById('postit3').style.transform = 'translateY(115px) translateX(-180px)';
+       
+}
+</script>
+
+<script>
+function myFunction5() {
+//fire the animation event
+//fire the animation event
+ document.getElementById("write").click();
+       
+}
+</script>
+
+
+
+<script>
+function runsettimeout() {
+setTimeout(myFunction1, 1000); 
+setTimeout(myFunction2, 4000); //this is where you create the delay and pause between the animations
+setTimeout(myFunction3, 6000); //this is where you create the delay and pause between the animations
+setTimeout(myFunction4, 8000); //this is where you create the delay and pause between the animations
+setTimeout(myFunction5, 10000); //this is where you create the delay and pause between the animations
+}
+
+</script>
+
+  
+ 
+
+<style>
+#postit1{
+	  transition: .8s ease-in-out;
+	 opacity: 0;
+	 left: 600px;
+	 top: 0px;
+	   transform: rotate(-90deg);
+			
+}
+</style>
+
+  
+  
+  
+  <style>
+#postit2{
+	  transition: .8s ease-in-out;
+	 opacity: 0;
+	 left: 600px;
+	 top: 0px;
+	   transform: rotate(-90deg);
+			
+}
+</style>
+
+  
+  <style>
+#postit3{
+	  transition: .8s ease-in-out;
+	 opacity: 0;
+	 left: 600px;
+	 top: 0px;
+	   transform: rotate(-90deg);
+			
+}
+</style>
+
+  
+  
+  <style> 
+.demo {
+  width:380px;
+  position:absolute;
+  left:145px;
+  top: 50px;
+    font-family: 'Patrick Hand', cursive;
+    font-size:14px;
+    height: 50px;
+    padding: 0px;
+		text-decoration: none;
+			padding-bottom: 4px;
+		background: url('underline_vaguered.gif') bottom repeat-x;
+
+
+}
+
+@keyframes mymove {
+  
+    0% {
+      opacity: 0;
+  transform: scale(1.5); 
+  }
+
+  100% {
+        opacity: 1;
+
+  transform: scale(1); 
+</style>
+  
+  
+  
+  
+
+	<style type="text/css">
+.style1 {
+				border: 1px solid #000000;
+}
+</style>
+
+</head>
+<body id="body" style=" background-image :url('Untitled.png');   background-size:659px 506px;   
+background-repeat: no-repeat; background-color:transparent">
+<input style="display:none" onclick="document.location.reload(true)" name="Button3" type="button" value="reset" />
+
+<button style="cursor: pointer; display: none" id="write">CASE STUDY</button>
+
+
+
+
+
+
+<div id="postit1" style="" class="postit yellow"><p class="postitp">Animations provide effective feedback on state changes 
+				in user interface (input received, processing, task complete).</p></div>
+
+<div id="postit2" style="" class="postit yellow"><p class="postitp">Animations help guide users through necessary steps for task completion, and provide visual feedback on progress.</p></div>
+
+<div id="postit3" style="" class="postit yellow"><p class="postitp">Animations make the user experience more engaging, satisfying, and help reduce cognitive load.</p></div>
+
+
+<!-- partial:index.partial.html -->
+<div class="outer" style="width: 601px" >
+
+
+
+
+
+
+
+
+<table id="mytable" style="width: 96%; height: 257px" >
+				<tr>
+								<td id="td1" >
+							
+</td>
+								<td >&nbsp;</td>
+								<td>
+								<img alt="" src="click.png" style="cursor: pointer;   position:absolute; top: 250px; left: 300px" onclick=" runsettimeout(); document.getElementById('runanimation').style.display='none'" id="runanimation" width="60" height="53"></td>
+				</tr>
+</table>
+
+
+
+
+
+
+
+  <p id="text-1" style="margin-left:20px">
+    <span class="screen-reader"><nobr>Animations bring life and a sense of magic to visual design.</nobr></span>
+    <span class="hand-writing"></span>
+  </p>
+</div>
+<!-- partial -->
+  <script src='vara.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+<div  id="demo" style="display:none" class="demo">
+				<h1>Animations in Modern Visual Design</h1>
+</div>
+
+</body>
+</html>

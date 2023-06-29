@@ -1,0 +1,97 @@
+﻿
+span.screen-reader {
+  display: block;
+  text-indent: -9999px;
+}
+
+#write:hover {
+  background: black;
+  color: white;
+}
+
+#next {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
+  font-weight: bold;
+}
+
+#restart {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
+  font-weight: bold;
+}
+
+#write {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
+  font-weight: bold;
+}
+
+.outer {
+
+  padding: 2rem;
+}
+
+.outer #text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-row button {
+  margin: 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.postitp{
+	margin-top:-0px;			
+}
+
+
+.postit{
+
+  margin: 15px;
+  min-width: 160px;
+  max-width: 160px;
+  height:160px;
+  padding: 15px 5px 5px 5px;
+  vertical-align: top;
+  border:1px solid #E8E8E8;
+  font-family: 'Patrick Hand', cursive;
+  font-size:19px;
+  text-align:center;
+  border-bottom-right-radius: 60px 5px;
+    box-shadow:1px 2px 0px rgba(0, 0, 0, 0.06);
+    position: absolute;
+}
+
+.yellow{
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%);
+}
+.pink{
+  background: linear-gradient(135deg, #ff879b 81%,#ff879b 82%,#ffc7d0 100%);
+}
+.green{
+  background: linear-gradient(135deg, #b1ff87 81%,#b1ff87 82%,#dbffc7 100%);
+}
