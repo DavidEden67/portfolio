@@ -1,0 +1,176 @@
+﻿
+<html lang="en" >
+<head>
+
+<style>
+body {
+    background:transparent;  ;
+}
+</style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Draggable knob and scroll area (linked)</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+</head>
+<body style="zoom: 71%; padding-top: 25px;  margin : 0" onload="document.getElementById('test1').click()">
+
+
+<span class="style2">
+
+<input  style="display:none"     onchange="updateRotation()" id="text" name="Text1" type="text" value="-90"></span>
+
+
+
+
+
+
+
+
+
+<!-- partial:index.partial.html -->
+<div class="table">
+  <div class="table-cell">
+    <div class="console">
+      <div class="navigation">
+      
+      
+      
+        <div id="screen"  style="left: 70px; top: 20px" >
+
+        
+        
+      <div id="content" >
+  <div>
+    <div id="divgps" class="backgroundshow box box1">&nbsp;<div style="display:none" id="divdescription">Drag me or spin the knob. Flick for momentum. Notice how it smoothly snaps to sections. </div></div>
+   
+
+
+  </div>
+</div>
+        
+        
+        </div>
+        
+        
+        
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div>
+      
+      <!-- partial:index.partial.html -->
+<div id="knobBG" style="margin:0 auto;  ">
+  <div id="knob" style="width: " ></div>
+</div>
+
+
+
+
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="multimedia">
+      
+      
+      
+
+      
+      
+      
+        <div class="dial left" style="position:absolute; z-index:200">
+  <input style="font-family: 'Space Mono', monospace; font-size:xx-small" id="driver" data-fgColor="rgb(0, 149, 255)" data-bgColor="#333" data-angleOffset=-125 data-angleArc=250 data-width=130 data-height=130 data-min=60 data-max=80 data-inputColor=#fff data-lineCap="round" data-thickness="0.05" data-cursor=true value="70" />        </div>
+        <div style="display:none" class="nowplaying"  style =" text-align:center">
+         <img src="temp.PNG" style ="margin: 0 auto" >
+        </div>
+        <div class="right_button_bank" >
+        
+			<table style="width: 100%">
+							<tr>
+											<td>
+											<input type="radio" checked="true" name="input" id="digaud" />
+          <label for="digaud">A/C</label>
+          <input type="radio" name="input" id="bluetooth" />
+          <label for="bluetooth">Heat</label>
+											</td>
+											
+											
+											
+											<td >
+										
+											   <input type="radio" checked="true" name="input2" id="in" />
+          <label for="in" style=" color:transparent; background-image: url('recyle.png'); background-position-x: 10px; background-position-y: 0px;background-repeat:no-repeat" class="style1">ac</label>
+         
+
+
+ <input type="radio" name="input2"  id="out" />
+                    <label for="out" style=" color:transparent; background-image: url('fresh.png'); background-position-x: 10px; background-position-y: 0px;background-repeat:no-repeat" class="style1">ac</label>
+											</td>
+							</tr>
+			</table>
+
+          
+        </div>
+        
+
+      </div>
+      <div class="climate_control">
+        
+      </div>
+          <div id="bottombox"><button style="color:white">-</button> <button id="button" class="white" onclick="if(document.getElementById('button').className == 'white'){document.getElementById('button').className = 'green';}else{document.getElementById('button').className = 'white';}"  >Phone</button> <button id="test1" style="color:white">+</button></div>
+    </div>
+ 
+  </div>
+ 
+</div>
+<!-- partial -->
+  <script src='jquery.min.js'></script>
+
+<script src='jquery.knob.min.js'></script><script  src="./script.js"></script>
+ <link rel="stylesheet" href="style.css">
+<!-- partial -->
+  <script src='Draggable.min.js'></script>
+<script src='ThrowPropsPlugin.min.js'></script>
+<script src='TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

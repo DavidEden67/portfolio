@@ -1,0 +1,508 @@
+﻿
+
+nav {
+    display: table;
+  table-layout: fixed;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+   
+
+}
+nav a {
+  display: table-cell;
+  width: 1%;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size:13px;  /*change navigation link font size here*/
+  
+  
+  
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-transition: 300ms linear 0s;
+	-moz-transition: 300ms linear 0s;
+	-o-transition: 300ms linear 0s;
+	transition: 300ms linear 0s;
+	outline: 0 none;
+}
+
+
+nav a.linkselected { /*a new instance created for nav a when a link is selected in the navigation */
+
+ text-decoration:none;
+  border-bottom: 2px solid #ef8b80;
+
+  color: inherit;
+text-shadow: none;
+cursor:default;
+  
+}
+
+
+
+nav a:hover {
+
+	color: #fff;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+nav a.linkselected:hover { /* remote text shadow for selected link */
+ text-decoration:none;
+text-shadow: none;
+  
+}
+
+
+
+nav a:last-child:nth-child(1):before {
+  width: 100%;
+}
+nav a:nth-child(1):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(1):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(2):before {
+  width: 50%;
+}
+nav a:nth-child(1):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(2):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(1):last-child:focus:before {
+  left: 50%;
+}
+nav a:nth-child(2):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(3):before {
+  width: 33.3333333333%;
+}
+nav a:nth-child(1):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(3):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(2):last-child:focus:before {
+  left: 33.3333333333%;
+}
+nav a:nth-child(2):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(1):last-child:focus:before {
+  left: 66.6666666667%;
+}
+nav a:nth-child(3):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(4):before {
+  width: 25%;
+}
+nav a:nth-child(1):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(4):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(3):last-child:focus:before {
+  left: 25%;
+}
+nav a:nth-child(2):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(2):last-child:focus:before {
+  left: 50%;
+}
+nav a:nth-child(3):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(1):last-child:focus:before {
+  left: 75%;
+}
+nav a:nth-child(4):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(5):before {
+  width: 20%;
+}
+nav a:nth-child(1):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(5):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(4):last-child:focus:before {
+  left: 20%;
+}
+nav a:nth-child(2):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(3):last-child:focus:before {
+  left: 40%;
+}
+nav a:nth-child(3):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(2):last-child:focus:before {
+  left: 60%;
+}
+nav a:nth-child(4):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(1):last-child:focus:before {
+  left: 80%;
+}
+nav a:nth-child(5):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(6):before {
+  width: 16.6666666667%;
+}
+nav a:nth-child(1):nth-last-child(6):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(6):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(6):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(5):last-child:focus:before {
+  left: 16.6666666667%;
+}
+nav a:nth-child(2):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(4):last-child:focus:before {
+  left: 33.3333333333%;
+}
+nav a:nth-child(3):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(3):last-child:focus:before {
+  left: 50%;
+}
+nav a:nth-child(4):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(2):last-child:focus:before {
+  left: 66.6666666667%;
+}
+nav a:nth-child(5):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(6):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(6):nth-last-child(1):last-child:focus:before {
+  left: 83.3333333333%;
+}
+nav a:nth-child(6):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(7):before {
+  width: 14.2857142857%;
+}
+nav a:nth-child(1):nth-last-child(7):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(7):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(7):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(6):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(6):last-child:focus:before {
+  left: 14.2857142857%;
+}
+nav a:nth-child(2):nth-last-child(6):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(5):last-child:focus:before {
+  left: 28.5714285714%;
+}
+nav a:nth-child(3):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(4):last-child:focus:before {
+  left: 42.8571428571%;
+}
+nav a:nth-child(4):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(3):last-child:focus:before {
+  left: 57.1428571429%;
+}
+nav a:nth-child(5):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(6):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(6):nth-last-child(2):last-child:focus:before {
+  left: 71.4285714286%;
+}
+nav a:nth-child(6):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(7):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(7):nth-last-child(1):last-child:focus:before {
+  left: 85.7142857143%;
+}
+nav a:nth-child(7):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(8):before {
+  width: 12.5%;
+}
+nav a:nth-child(1):nth-last-child(8):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(8):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(8):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(7):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(7):last-child:focus:before {
+  left: 12.5%;
+}
+nav a:nth-child(2):nth-last-child(7):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(6):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(6):last-child:focus:before {
+  left: 25%;
+}
+nav a:nth-child(3):nth-last-child(6):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(5):last-child:focus:before {
+  left: 37.5%;
+}
+nav a:nth-child(4):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(4):last-child:focus:before {
+  left: 50%;
+}
+nav a:nth-child(5):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(6):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(6):nth-last-child(3):last-child:focus:before {
+  left: 62.5%;
+}
+nav a:nth-child(6):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(7):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(7):nth-last-child(2):last-child:focus:before {
+  left: 75%;
+}
+nav a:nth-child(7):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(8):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(8):nth-last-child(1):last-child:focus:before {
+  left: 87.5%;
+}
+nav a:nth-child(8):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(9):before {
+  width: 11.1111111111%;
+}
+nav a:nth-child(1):nth-last-child(9):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(9):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(9):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(8):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(8):last-child:focus:before {
+  left: 11.1111111111%;
+}
+nav a:nth-child(2):nth-last-child(8):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(7):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(7):last-child:focus:before {
+  left: 22.2222222222%;
+}
+nav a:nth-child(3):nth-last-child(7):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(6):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(6):last-child:focus:before {
+  left: 33.3333333333%;
+}
+nav a:nth-child(4):nth-last-child(6):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(5):last-child:focus:before {
+  left: 44.4444444444%;
+}
+nav a:nth-child(5):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(6):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(6):nth-last-child(4):last-child:focus:before {
+  left: 55.5555555556%;
+}
+nav a:nth-child(6):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(7):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(7):nth-last-child(3):last-child:focus:before {
+  left: 66.6666666667%;
+}
+nav a:nth-child(7):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(8):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(8):nth-last-child(2):last-child:focus:before {
+  left: 77.7777777778%;
+}
+nav a:nth-child(8):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(9):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(9):nth-last-child(1):last-child:focus:before {
+  left: 88.8888888889%;
+}
+nav a:nth-child(9):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a:last-child:nth-child(10):before {
+  width: 10%;
+}
+nav a:nth-child(1):nth-last-child(10):focus ~ :last-child:before, nav a:nth-child(1):nth-last-child(10):last-child:focus:before {
+  left: 0%;
+}
+nav a:nth-child(1):nth-last-child(10):last-child:before {
+  left: 0;
+}
+nav a:nth-child(2):nth-last-child(9):focus ~ :last-child:before, nav a:nth-child(2):nth-last-child(9):last-child:focus:before {
+  left: 10%;
+}
+nav a:nth-child(2):nth-last-child(9):last-child:before {
+  left: 0;
+}
+nav a:nth-child(3):nth-last-child(8):focus ~ :last-child:before, nav a:nth-child(3):nth-last-child(8):last-child:focus:before {
+  left: 20%;
+}
+nav a:nth-child(3):nth-last-child(8):last-child:before {
+  left: 0;
+}
+nav a:nth-child(4):nth-last-child(7):focus ~ :last-child:before, nav a:nth-child(4):nth-last-child(7):last-child:focus:before {
+  left: 30%;
+}
+nav a:nth-child(4):nth-last-child(7):last-child:before {
+  left: 0;
+}
+nav a:nth-child(5):nth-last-child(6):focus ~ :last-child:before, nav a:nth-child(5):nth-last-child(6):last-child:focus:before {
+  left: 40%;
+}
+nav a:nth-child(5):nth-last-child(6):last-child:before {
+  left: 0;
+}
+nav a:nth-child(6):nth-last-child(5):focus ~ :last-child:before, nav a:nth-child(6):nth-last-child(5):last-child:focus:before {
+  left: 50%;
+}
+nav a:nth-child(6):nth-last-child(5):last-child:before {
+  left: 0;
+}
+nav a:nth-child(7):nth-last-child(4):focus ~ :last-child:before, nav a:nth-child(7):nth-last-child(4):last-child:focus:before {
+  left: 60%;
+}
+nav a:nth-child(7):nth-last-child(4):last-child:before {
+  left: 0;
+}
+nav a:nth-child(8):nth-last-child(3):focus ~ :last-child:before, nav a:nth-child(8):nth-last-child(3):last-child:focus:before {
+  left: 70%;
+}
+nav a:nth-child(8):nth-last-child(3):last-child:before {
+  left: 0;
+}
+nav a:nth-child(9):nth-last-child(2):focus ~ :last-child:before, nav a:nth-child(9):nth-last-child(2):last-child:focus:before {
+  left: 80%;
+}
+nav a:nth-child(9):nth-last-child(2):last-child:before {
+  left: 0;
+}
+nav a:nth-child(10):nth-last-child(1):focus ~ :last-child:before, nav a:nth-child(10):nth-last-child(1):last-child:focus:before {
+  left: 90%;
+}
+nav a:nth-child(10):nth-last-child(1):last-child:before {
+  left: 0;
+}
+nav a span {
+  position: relative;
+  display: block;
+/*  padding: 1rem;   this was the orginal code that put too much distance between the hyperlink and the underline below it*/
+
+ z-index: 10;
+}
+nav a:last-child:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  height: 4px;
+  z-index: -1;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  margin-left:20px;
+  
+
+}
+
+.ripple:after {
+  content: "";
+  background: rgba(255, 255, 90, 0.3);  /*  Ripple color */
+color:  
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  opacity: 0;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.ripple:active:after {
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+  transition: 0s;
+}
+
+::selection {
+  background: white;
+}
+
+
+
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: portrait){
+  
+nav a {
+  font-size:10px;
+
+}
+
+
+}
+  
+  
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: landscape){
+ 
+
+nav a {
+  font-size:18px;
+
+}
+
+
+}
+
+

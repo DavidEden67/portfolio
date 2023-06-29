@@ -1,0 +1,204 @@
+﻿
+.container {
+  width: 230px;
+  pointer-events: none;
+  padding: 0px;
+  -webkit-perspective: 1000;
+  transform: rotateX(0deg);
+  float: left;
+  margin-right: -60px;
+  margin-left: 0;
+  transition: .4s;
+  z-index: 1;
+  	
+	
+
+}
+
+.inside {
+  overflow: hidden;
+  top: 20px;
+
+  border: 1px #111 solid;
+  transform: rotateX(-9deg) rotateY(50deg);
+
+  background-size: 100% auto;
+  height: 135px;
+  width: 245px;
+  margin: 0 auto;
+  transition: .5s;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+  left: 0;
+  box-shadow: -1px 0 2px 1px #000;
+ background-size: contain;
+             -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.inside:hover {
+ 
+  z-index: 2;
+}
+
+.container:hover .inside .bottom {
+  opacity: .9;
+}
+
+.container:hover .inside {
+  transform: rotateX(0deg) rotateY(20deg);
+  position: relative;
+  left: 20px;
+  top: 10px;
+  box-shadow: 0px 0 15px 2px #000;
+}
+
+.container:hover + .container {
+  margin-left: 80px; /*distance to right on hover*/ 
+}
+
+.container:hover .inside:before {
+  width: 0px;
+  left: 0;
+  border-right: 0px solid transparent;
+}
+
+#parent:hover .inside:not(:hover) {
+  opacity: .15;
+}
+
+.bottom {
+  position: Absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+  color: #fff;
+  transition: 1s;
+  opacity: .7;
+  padding-left:10px;
+  text-align: left;
+  white-space:nowrap;
+  font-size:14px;
+}
+
+.fs {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  border: 0 solid transparent;
+  color: #eee;
+  transition: .2s;
+}
+
+.fs:focus {
+  bottom: -20px;
+  opacity: 0;
+}
+
+.lol {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, .85);
+  -webkit-perspective: 800;
+  left: 0;
+  margin: 0;
+  margin-left: -50px;
+}
+
+.lol .inside {
+  width: 96%;
+  max-width: 800px;
+  height: 80vh;
+  transform: rotateX(5deg) rotateY(0);
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+    transition: 1s, background-position 25s;
+}
+
+.lol:hover .inside {
+  transform: rotateX(10deg) rotateY(0deg);
+  position: relative;
+  left: 0px;
+     transition: 1s, background-position 25s;
+  
+ 
+}
+
+.lol:hover .inside:before {
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  content: "";
+  background: red;
+  position: absolute;
+}
+
+body:hover .lol .inside:not(:hover) {
+  opacity: 1;
+}
+
+.bg1 .inside {
+   background-image: url('../_images/Dell.jpeg');
+    background-color:white;
+    background-repeat:no-repeat;
+      background-position: center;
+
+}
+
+.bg2 .inside {
+    background-image: url('../_images/software.jpeg');
+    background-color:white;
+    background-repeat:no-repeat;
+      background-position: center;
+
+}
+
+.bg3 .inside {
+  background-image: url('../_images/787.jpeg');
+  background-repeat:no-repeat;
+    background-position: center;
+    background-color:#ABC4E3;
+  
+}
+
+.bg4 .inside {
+   background-image: url('../_images/fiatlux.jpeg');
+   background-color: #7B7776;
+   background-repeat:no-repeat;
+     background-position: center;
+}
+
+.bg5 .inside {
+
+    background-image: url('../_images/hp.jpeg');
+    background-color:white;
+    background-repeat:no-repeat;
+      background-position: center;
+
+}
+
+
+
+
+
+.bg6 .inside {
+  background-image: url('../../../hp.jpg');
+}
+
+.bg7 .inside {
+  background-image: url('http://biernacki.website/img/gallery/muk.jpg');
+}
+
+.bg8 .inside {
+  background-image: url('http://biernacki.website/img/gallery/cts.jpg');
+}
