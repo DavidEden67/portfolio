@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  
+<style type="text/css">
+       .wrap {
+      overflow: hidden;
+      margin: auto;
+      padding-left: 15%;
+       max-width:80%;
+     
+    }
+    .box {
+      float: left;
+      position: relative;
+      
+
+    }
+    
+    .box2 {
+      float: left;
+      position: relative;
+      
+
+    }
+
+    
+    
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+  height:100%;
+     
+       }
+    .boxInner img {
+
+     object-fit: cover;
+     width: 100%;
+    
+
+    }
+    
+    
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 0px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFFFB3;
+      padding: 5px;
+      text-align: left;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      height: 42px;
+      font-size:12px;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:100%;
+       font-weight:bold;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+         @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box {
+    width: 68%;
+        padding-bottom:91.5%;   
+        margin-bottom:2%;        
+        }
+    }
+               @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box2 {
+    
+      width: 64%;
+ 
+        padding-bottom:100%;   
+        margin-bottom:2%;     
+        }
+    }
+
+    @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box {
+       width: 40%;
+    
+        padding-bottom:53.5%;   
+        margin-bottom:2%;    
+      }
+    }
+        @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box2 {
+      width: 40%;
+    
+        padding-bottom:63%;   
+        margin-bottom:2%;     
+      }
+    }
+
+  .style1 {
+				text-align: center;
+}
+
+  .style2 {
+				background-color: #D8D8D8;
+}
+
+  </style>
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup in new window code -->
+<script>
+function PopupCenter(url, title, w, h) {
+    // Fixes dual-screen position                         Most browsers      Firefox
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+    var newWindow = window.open(url, title, 'scrollbars=yes, resizable=yes, status=yes, titlebar=yes, toolbar=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+    // Puts focus on the newWindow
+    if (window.focus) {
+        newWindow.focus();
+    }
+}
+
+</script>
+
+
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+ <link rel="stylesheet" href="css/imagemap.css">
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - Visual Design</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);">
+
+
+<!-- page scroll down indicator These must all appear together after the body tag -->
+<div class="progress-wrap" title="Back to Top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" >
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+
+  <link rel="stylesheet" href="scrollprogress/backtotop.css">
+ 	<script type="text/javascript"  src="scrollprogress/backtotop.js"></script>
+ <script src='scrollprogress/jquery.min.js'></script>
+
+<!-- END page scroll down indicator These must all appear together after the body tag -->
+
+
+
+
+<div class="top-container" >
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 700);"  >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" class="selected" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);">My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a  style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 600);"><nobr>Application Design</nobr></a></span></a>
+
+  
+    <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'web.htm';}, 600);"  ><nobr>Web Design</nobr></a></span></a>
+  
+     <a href="javascript:void(0)"   ><span class="ripple"><a  class="linkselected" style="cursor:default" onclick=" setTimeout(function(){window.location.href = 'visual.htm';}, 600);"  ><nobr>Visual Design</nobr></a></span></a>
+  
+
+   <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:default" onclick=" setTimeout(function(){window.location.href = 'hardware.htm';}, 600);"  ><nobr>Hardware Design</nobr></a></span></a>
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+<div class="content" >
+
+
+<p><span class=" pagetitle">Visual Design</span></p>
+
+<p>While I have spent years perfecting my Interaction Design skills, I have also 
+spent a great deal of time on learning Visual Design and applying its principles 
+to my work. Users initially form ideas about the functionality of the user 
+interface from static elements before they actually click or tap on the screen. 
+CSS3 has opened up new vistas for visual design, and it is essential for a UX 
+designer to understand CSS3 to be able to work with company style and branding 
+guidelines.</p>
+<p>I strive towards a balanced approach and applying 
+the principles that enhance usability rather than making the screen look 
+colorful. I have boiled down the most important visual design principles to the 
+following which guide my own design decisions:</p>
+<ul>
+				<li><strong>Visual Prominence</strong> communicates importance to the user. For example, a <em>Login</em> button 
+				that is the gateway to the user interface should look prominent 
+				and distinct.</li>
+				<li><strong>Visual Hierarchy</strong> is rooted in Information 
+				Architecture: it attracts and guides the eye to the ranking and 
+				order of visual elements. The 80/20 rule very much applies to 
+				visual hierarchy.</li>
+				<li><strong>Weight Balance</strong> distributes the visual 
+				weight of the user interface. For example, an image does not 
+				need to take half the screen to tell the users that they 
+				should look at it. A simple CSS box-shadow can make a smaller image look 
+				more balanced on 
+				the screen and 
+				at the same time more noticeable.</li>
+				<li><strong>Gestalt </strong>rules for for proximity, similarity 
+				(grouping), continuity, scaling, spacing, and contrast must also be 
+				applied. This includes using design elements such as color, 
+				texture, shadows, borders and shapes to capture the 
+				user&#39;s attention and create a mental model.</li>
+				<li><strong>Motion </strong>is an important factor in how users 
+				notice objects on the screen and should be used effectively in 
+				visual design.</li>
+</ul>
+
+
+
+
+
+
+
+
+<div id="printer-section" class="scroll-section" >
+	<h4 class=" h4scrollindicator">How I incorporate animations and motion in visual design</h4>
+
+<p>Animations are playing a major role in the new <em>attention economy</em>: 
+apps and websites increasingly revolve around the human attention span and using 
+gamification to communicate with users. With the end of support for motion design in Flash, CSS3 and 
+Vector Graphics are filling the gap for visual designers. When used properly, animations play a vital 
+role in capturing users&#39; attention and helping them accomplish their tasks 
+more successfully. As 
+such it is critical to incorporate animations when design is being transformed from 
+simple wireframes into more advanced prototypes and evaluate their effectiveness with 
+users. </p>
+	<p>Here I have created a demonstration of some of my routine visual 
+	design transition 
+	techniques&nbsp;for fade, zoom, rotation, and motion that are 
+	eye-catching yet without being overwhelming. Such animations have been 
+	especially effective in communicating alerts and other critical information 
+	to users (especially in the mobile environment where users are more 
+	distracted).</p>
+	
+	<div style="overflow:hidden;  margin:0px; height:80%; margin-bottom:-60px; margin-top:-60px">
+<p class="style1" ><iframe class="iframezoom" frameborder="0" scrolling="no" style=" transform: scale(0.8); padding-left:0px;      border-radius:30px; min-height:510px; width: 650px; overflow: hidden;margin-top: 0px; height:100%; " name="I1" id="I1"  src="animation_page/animation/dist/index.html">
+</iframe></P>
+</div>
+
+
+
+
+
+
+
+<div id="printer-section" class="scroll-section" >
+	<h4 class=" h4scrollindicator">Merging Visual and Interaction Design</h4>
+
+<p>I have illustrated the aforementioned Visual Design principles in the 
+example below with the design of a 
+control panel. I created the design in CSS3 by using a few simple reusable 
+classes to create shapes and linear gradients along with some vector graphics. I have divided the control panel into 3 
+main sections based on frequently used and related user tasks. Much of my 
+work in computer manufacturing and airline industry has been about designing 
+controls panels like the one below, and visual design principles have helped 
+solve major usability challenges. </p>
+<p>The incredible versatility&nbsp;of CSS3 empowers visual designers to quickly design buttons, 
+knobs, gradients, shadows, etc., without any need for Photoshop and other 
+graphics programs. This advantage makes the UI design scalable in any browser 
+and much easier to modify based on user feedback and testing. (<span class="style2">You 
+may turn the knobs or click the buttons below.</span>)
+</p>
+<p class="style1"  style="margin-top:20px"><iframe class="iframezoom"  frameborder="0" scrolling="no" style="zoom: 71%; padding-left:0px;  box-shadow: inset 2px 3px 12px rgba(255, 255, 255, 0.1), inset -2px -7px 20px rgba(0, 0, 0, 0.5), inset -1px -2px 2px rgba(255, 255, 255, 0.1), 5px 20px 50px rgba(0, 0, 0, 0.7);    border-radius:30px; min-height:750px; width: 570px; overflow: hidden;margin-top: 0px; height:100%; " name="I1" id="I1" src="controlpanel/index.html">
+<div class="style1">
+Your browser does not support inline frames or is currently configured not to display inline frames.
+			</div>
+			</iframe>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+<p>&nbsp;</p>
+	
+	
+
+
+
+
+</div>
+
+	
+	<script type="text/javascript" src="javascript/wz_tooltip.js"></script>
+	
+	
+<!-- for adding the responsive image map -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+<!-- for adding the responsive image map -->
+<script  src="javascript/jquery.rwdImageMaps.js"></script>
+<script  src="javascript/jquery.rwdImageMaps.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="javascript/bubble.js"></script>
+  <link rel="stylesheet" href="visual/style.css">
+<script  src="visual/script.js"></script>
+
+  <link rel="stylesheet" href="visual/loading.css">
+    <script  src="visual/loading.js"></script>
+    
+    <link rel="stylesheet" href="visual/toggle.css">
+    
+    
+        <script  src="visual/radio.js"></script>
+    
+    <link rel="stylesheet" href="visual/radio.css">
+
+     <link rel="stylesheet" href="visual/accordion.css">
+     <script  src="visual/accordion.js"></script>
+     </div>
+</body>
+</html>

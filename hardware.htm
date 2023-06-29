@@ -1,0 +1,738 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  
+<style type="text/css">
+       .wrap {
+      overflow: hidden;
+      margin: auto;
+      padding-left: 15%;
+       max-width:80%;
+     
+    }
+    .box {
+      float: left;
+      position: relative;
+      
+
+    }
+    
+    .box2 {
+      float: left;
+      position: relative;
+      
+
+    }
+
+    
+    
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+  height:100%;
+     
+       }
+    .boxInner img {
+
+     object-fit: cover;
+     width: 100%;
+    
+
+    }
+    
+    
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 0px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFFFB3;
+      padding: 5px;
+      text-align: left;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      height: 42px;
+      font-size:12px;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:100%;
+       font-weight:bold;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+         @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box {
+    width: 68%;
+        padding-bottom:91.5%;   
+        margin-bottom:2%;        
+        }
+    }
+               @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box2 {
+    
+      width: 64%;
+ 
+        padding-bottom:100%;   
+        margin-bottom:2%;     
+        }
+    }
+
+    @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box {
+       width: 40%;
+    
+        padding-bottom:53.5%;   
+        margin-bottom:2%;    
+      }
+    }
+        @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box2 {
+      width: 40%;
+    
+        padding-bottom:63%;   
+        margin-bottom:2%;     
+      }
+    }
+
+  </style>
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup in new window code -->
+<script>
+function PopupCenter(url, title, w, h) {
+    // Fixes dual-screen position                         Most browsers      Firefox
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+    var newWindow = window.open(url, title, 'scrollbars=yes, resizable=yes, status=yes, titlebar=yes, toolbar=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+    // Puts focus on the newWindow
+    if (window.focus) {
+        newWindow.focus();
+    }
+}
+
+</script>
+
+
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+ <link rel="stylesheet" href="css/imagemap.css">
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - Hardware Design</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);">
+
+
+<!-- page scroll down indicator These must all appear together after the body tag -->
+<div class="progress-wrap" title="Back to Top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" >
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+
+  <link rel="stylesheet" href="scrollprogress/backtotop.css">
+ 	<script type="text/javascript"  src="scrollprogress/backtotop.js"></script>
+ <script src='scrollprogress/jquery.min.js'></script>
+
+<!-- END page scroll down indicator These must all appear together after the body tag -->
+
+
+
+
+<div class="top-container" >
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 700);"  >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" class="selected" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);">My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a  style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 600);"><nobr>Application Design</nobr></a></span></a>
+
+  
+    <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'web.htm';}, 600);"  ><nobr>Web Design</nobr></a></span></a>
+    
+       <a href="javascript:void(0)"   ><span class="ripple"><a   style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'visual.htm';}, 600);"  ><nobr>Visual Design</nobr></a></span></a>
+  
+
+   <a href="javascript:void(0)"   ><span class="ripple"><a  class="linkselected" style="cursor:default" onclick=" setTimeout(function(){window.location.href = 'hardware.htm';}, 600);"  ><nobr>Hardware Design</nobr></a></span></a>
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+
+<div class="content" >
+
+
+<p><span class=" pagetitle">Hardware&nbsp; Design</span></p>
+<p>Designing user interactions for hardware devices have presented the most challenging design problems in my career. This is mostly due to the limited screen space and limited user inputs for both hardware and firmware. Solving design problems for small screens have helped me become a more 
+creative UX Designer due to the restrictions imposed on the design.</p>
+<p>Thankfully, due to my knowledge of jQuery mobile and CSS3, I have learned to 
+create highly interactive and realistic simulations for hardware devices given 
+the fact that most small devices are now touch-enabled. My design contributions 
+have been especially beneficial for conducting early user testing in a more 
+natural environment where users can hold a mobile device and interact with it 
+through gestures, and therefore help discover the many user interaction issues that would otherwise not 
+have been possible with simpler wireframing tools.  </p>
+
+
+
+
+
+
+
+<div id="jukebox-section" class="scroll-section" >
+<h4 class=" h4scrollindicator">HP Printers</h4>
+
+<p>Working at HP presented wonderful opportunities to apply my design knowledge 
+and prototyping techniques to designing printer control panels. I was fortunate 
+to contribute to the design of a new generation of touch-enabled control panels 
+that were released in 2022-2023. My main responsibility was to take the customer 
+and business requirements and create more realistic simulations after the Figma 
+wireframes had reached their inherent limitations. The HTML and jQuery components shown below are highly modular and are reusable, which significantly helped with 
+brainstorming interactive concepts for conducting early user testing. The more 
+valid usability test results from high-fidelity prototypes not only helped 
+create a better and more user-friendly product, but they also saved a great deal 
+of unnecessary costs in product delays and rework.</p>
+	<p>The following prototype demonstrates the user journey through control panel setup and connection to the Wi-Fi network. It was imperative to have a very smooth and seamless user interface that would guide the user through each step of the setup process; prevent errors and help users recover from errors, and successfully 
+	lead them to print their first page&nbsp;to help build confidence in the product.</p>	
+	
+	<div class="wrap effect8" style="display: block;  max-width:40%; margin-top:5px" >
+    <!-- Define all of the tiles: -->
+							
+
+	
+	
+													
+								<div style="  max-height    :210px; height: auto;  width:100%; padding: 65px; background:  transparent;  ">								
+													
+													<video muted controls=”controls” onloadstart="this.volume=0.1"   onended="this.currentTime = 0;" id="myVideo" style="transform: translate(-30%, -18%);height : auto; max-width:90%; max-height: 320px;outline: none;  " preload="auto">
+  <source src="videos/controlpanel.mp4" onended="this.currentTime = 0;" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag. 
+</video>
+</div>
+
+
+	</div>
+  <!-- /#wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="jukebox-section" class="scroll-section" >
+<h4 class=" h4scrollindicator">&nbsp;</h4>
+<h4 class=" h4scrollindicator">Dell Jukebox MP3 Player</h4>
+
+	<p>Dell Jukebox was a major attempt by Dell to enter the consumer 
+	market and gain recognition as being more than just a PC manufacturer. 
+	Apple&#39;s iPod was at the time the undisputed king of the MP3 players. Any 
+	competition had to come up with worthy user-friendly features to attract 
+	consumers in a saturated market segment. Dell Jukebox user research also made the 
+	company aware that low-cost solutions and price alone could not be the only drivers to gain 
+	market share, and that ease of use and design aesthetics were the key 
+	differentiations that consumers were willing to pay for. </p>
+	<p>Through user research, we actually learned that one of the most important 
+	features of iPod was the signature Click Wheel. It was not just the fact 
+	that the iPod wheel simplified user interaction and the user navigation, but the enormous 
+	ergonomic value to the users by being able to hold the device with one hand and navigate the menus and select songs. So while we could design the menus similar to iPod, we had to 
+	create something similar (ergonomically speaking) to iPod functionality.</p>
+	<p>As such we came up with the concept of the Thumb Wheel which was placed at the center of the device. Turning the wheel would enable the users to navigate the menus vertically and then pressing it down would select an action such as playing a song. The rest of the buttons for pause/play, and rewind and skip were also placed ergonomically to be within the 
+	easy reach of the user's thumb and provide tactile feedback. I also had to work on the software usability for the Jukebox with our supplier in order to make sure that the user could transfer songs easily from the PC to the albums on the device. The player received warm reception in the market for its innovative features and ergonomics.</p>
+	
+	
+	<div class="wrap effect8" style="display: block; " >
+    <!-- Define all of the tiles: -->
+    				<div class="box">
+									<div class="boxInner">
+													<img style="" src="images/mp31.PNG" />
+													<div class="titleBox" >
+																	Main Screen: Users can quickly navigate through menus or songs by turning the thumb wheel, and select by pressing the wheel. </div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													<img  src="images/mp32.PNG"   />
+													<div class="titleBox" >
+																	Songs being played on the prototype that I created.</div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													<img  src="images/mp33.PNG"  />
+													<div class="titleBox">
+																	The menus also used principles of design consistency and learnability to make them intuitive.</div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													<a target="_blank" href="https://support.hp.com/bg-en/document/c00489102">
+													<img  src="images/mp34.PNG"    /></a>
+													<div class="titleBox">
+																	Actual working product.</div>
+									</div>
+					</div>
+	</div>
+  <!-- /#wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="printer-section" class="scroll-section" >
+ <h4 class=" h4scrollindicator">Dell Photo Printers</h4>
+ 
+	
+			<p>When I started working for Dell, the User Experience Group 
+		conducted user testing on third-party products with virtually no UX Design 
+		involvement in the design of the products.&nbsp;We would basically 
+			select a vendor based on usability test results. I was hired to help establish 
+			interaction Design within usability 
+		and help bring more influence and recognition to our group through 
+		design involvement. Dell was 
+		essentially 
+		a hardware company at the time, and the suppliers modified Dell products based on 
+		slight cosmetic hardware modifications in order to differentiate the Dell brand. The company was realizing that the success of Apple was 
+		largely due to the fact that the Apple User Experience was directly 
+		involved in product design, and our group had to respond somehow.</p>
+	<p>My first major assignment with the Dell printer product line was to directly work with Lexmark 
+	as our printer supplier, 
+		and modify their printer control panel user interface to make the Dell brand 
+	easier to use and give our printers their own design language. One such 
+		product was the Dell 942 printer, the first major attempt to redesign and modify 
+		a supplier multifunction printer. The device had to Print, Scan, 
+		Copy, and Fax. 
+		</p>
+	<p>Through user research we learned which direct shortcuts 
+		the customers preferred for routine tasks via the buttons on the control 
+	panel, rather than having to 
+	navigate through 
+		the tedious and complicated menus on the LCD screen that had been 
+	originally designed by Lexmark. For example, users wanted two separate buttons for printing in color or in black to save money on ink 
+	without selecting the color option through a menu. Users also&nbsp; wanted 
+	to be able to scan to an application directly (e.g., Microsoft Word or PDF), 
+	and select each device function directly via buttons on control panel rather 
+	then through menus (for print, copy, fax, and scan). User Experience 
+	discovered 
+	that a low-cost solution to install fewer buttons and force users to cycle 
+	through menus could actually backfire in the market, and as such made better informed 
+	design decisions and influenced the product design accordingly. The user research, the design 
+		effort, and the A/B usability tests helped the company design its first 
+		control panel through interactive mockups before the printer hardware was built 
+	(as traditionally had been done), which also provided the firmware and software engineers 
+	with a vision to understand the intent of the UX design and build it more quickly. 
+	It further helped differentiate the Dell brand because of its user-friendly 
+	features, and created a design paradigm for millions of Dell printers sold 
+	around the world.</p>
+</div>
+	
+	
+	
+	
+	
+	<div class="wrap effect8 "  >
+    <!-- Define all of the tiles: -->
+    
+    
+    
+    
+    				<div class="box2" >
+									<div class="boxInner">
+													<img src="images/printer.PNG" />
+													<div class="titleBox">
+																	Main Screen: 
+																	Dell 942 
+																	Printer 
+																	Startup 
+																	Screen.
+</div>
+									</div>
+					</div>
+					<div class="box2" >
+									<div class="boxInner">
+													<img  src="images/printer2.PNG"   />
+													<div class="titleBox"  >
+																Photo Print 
+																Mode: User can 
+																cycle through 
+																the photos and 
+																touch up the 
+																selected photos 
+																to print. </div>
+									</div>
+					</div>
+					<div class="box2"  >
+									<div class="boxInner">
+													<img  src="images/printer3.PNG"  />
+													<div class="titleBox">
+																	Scan Mode: 
+																	User can 
+																	directly 
+																	send scans 
+																	to favorite 
+																	applications 
+																	on PC.</div>
+									</div>
+					</div>
+					<div class="box2"  >
+									<div class="boxInner" style="background-color:white; border: 1px solid silver">
+													<img  src="images/printer4.PNG"   />
+													<div class="titleBox">
+																	
+																	
+																	Actual 
+																	working 
+																	product 
+																	based on my 
+																	design 
+																	implementation.																</div>
+									</div>
+					</div>
+	
+	
+	
+	
+	</div>
+	
+	
+	  <!-- /#wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p style="height:100px"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+	
+
+
+</div>
+
+
+
+</div>
+
+	
+	<script type="text/javascript" src="javascript/wz_tooltip.js"></script>
+	
+	
+<!-- for adding the responsive image map -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+<!-- for adding the responsive image map -->
+<script  src="javascript/jquery.rwdImageMaps.js"></script>
+<script  src="javascript/jquery.rwdImageMaps.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="javascript/bubble.js"></script>
+
+
+
+</body>
+</html>

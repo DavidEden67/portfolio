@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+
+<!-- disable zooming on the touch device h4-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; ">
+
+
+<!-- disable contect menue on mobile devices. -->
+<style>
+body { -webkit-touch-callout: none !important; }
+a { -webkit-user-select: none !important; }
+
+</style>
+
+
+<script>
+
+//scroll to top on refresh
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+ <link rel="stylesheet" href="css/imagemap.css">
+  <link rel="stylesheet" href="css/designthinking.css">
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+   
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - My Design Thinking</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500); setTimeout(function(){ document.getElementById('back').click(); }, 1000);">
+
+<!-- page scroll down indicator These must all appear together after the body tag -->
+<div class="progress-wrap" title="Back to Top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" >
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+
+  <link rel="stylesheet" href="scrollprogress/backtotop.css">
+ 	<script type="text/javascript"  src="scrollprogress/backtotop.js"></script>
+ <script src='scrollprogress/jquery.min.js'></script>
+
+<!-- END page scroll down indicator These must all appear together after the body tag -->
+
+
+
+
+<div class="top-container" style="left: 0px; top: 0px">
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" class="selected" >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);">My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+   <a  href="javascript:void(0)"     ><span class="ripple"><a style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 600);"><nobr>Home</nobr></a></span></a>
+  <a  href="javascript:void(0)"   ><span class="ripple"><a style="cursor:default"  onclick=" setTimeout(function(){window.location.href = 'mydesignphilosophy.htm';}, 600);" class="linkselected" ><nobr>My Design Thinking</nobr></a></span></a>
+  <a href="javascript:void(0)"   ><span class="ripple"><a style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'myucdcycle.htm';}, 600);"  ><nobr>My UCD Cycle</nobr></a></span></a>
+ 
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+<div class="content">
+
+<p class="pagetitle">My Design Thinking</p>
+
+		
+		
+	
+
+		<p>Design is fundamentally about solving problems. Users of all walks of 
+		life use products to solve specific problems and to fulfill their needs. Design Thinking teaches us that users think about how useful a 
+		product is before considering how user-friendly it is, and as such it 
+		helps us establish a design process to deliver products that are useful and add value. Part of my greatest contribution to various Agile teams has been to 
+		move Design Thinking further upstream to ensure that user needs and user 
+		pain points are clearly understood through research and addressed in the 
+		design before coding begins. </p>
+<div id="designthinking-section" class="scroll-section" >
+	<p>The following interactive section provides an overview of my 
+	user research and design activities that help facilitate Design Thinking within the Agile development process.</p>
+	&nbsp;</div>
+
+		
+
+
+
+ 
+ 
+
+<div   class="circle-menu" style="left: 0px; top: 0px">                        
+<div id="divtext" style="line-height: 130%; margin-top : 20%; margin-left: 22%; width: 63%; opacity: 0;  transition: .5s ease-in-out; font-size:13px; text-align:left  " > </div>
+
+
+<div id="button" class="button" tabindex="1" style="left: 40%; top: 20%; width: 90px; height: 90px;" style="cursor:pointer" onclick="setTimeout(function(){ document.getElementById('button').style.display='none' }, 1000); document.getElementById('spiritual').style.transform = ' rotate(50deg) translate(12em) rotate(-50deg)'; document.getElementById('intellectual').style.transform = ' rotate(350deg) translate(12em) rotate(-350deg)'; document.getElementById('occupational').style.transform = ' rotate(130deg) translate(12em) rotate(-130deg)'; document.getElementById('emotional').style.transform = ' rotate(190deg) translate(12em) rotate(-190deg)'; document.getElementById('environmental').style.visibility='visible'; document.getElementById('emotional').style.visibility='visible'; document.getElementById('spiritual').style.visibility='visible'; document.getElementById('intellectual').style.visibility='visible'; document.getElementById('occupational').style.visibility='visible'  ">
+    
+		<img title="David's approach to Design Thinking" alt="" src="images/click.png" width="92" height="86"></div>
+
+
+	<ul>
+	
+	<li><a id="environmental" onmouseenter=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have often conducted contextual inquires with the goal of creating empathy for users. Documenting the physical and cognitive demands of the environments that users work in such as shops and factories, and the pain points that they experience due to poor user experience and missing requirements can greatly help justify the need for better design.'"  onmouseleave=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '0'"                ontouchstart=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have often conducted contextual inquires with the goal of creating empathy for users. Documenting the physical demands of the environments that they work in such as shops and factories, and the pain points that they experience due to poor software usability can greatly help justify the need for better design.'"  ontouchend=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '0'"  style=" transition: .75s ease-in-out; visibility: hidden"  class="environmental" href="#">Empathise</a></li>
+		
+		
+		
+		
+		
+		<li><a id ="intellectual" class="intellectual" style=" transition: .75s ease-in-out; visibility: hidden" onmouseenter=" document.getElementById('intellectual').style.transform = 'scale(1.1) rotate(350deg) translate(12.1em) rotate(-350deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='User research and creating Personas has been a major communication tool for me to define problems from the user perspective. I include a section for <i>Pain Points </i>under each Persona. This helps ensure that the design will not just solve marketing or engineering problems, and that solving user problems are kept at the forefront of design activities.'"  onmouseleave=" document.getElementById('intellectual').style.transform = 'scale(1.0) rotate(350deg) translate(12em) rotate(-350deg)'; document.getElementById('divtext').style.opacity= '0'"                        ontouchstart=" document.getElementById('intellectual').style.transform = 'scale(1.1) rotate(350deg) translate(12.1em) rotate(-350deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='User research and creating Personas has been a major communication tool for me to define problems from the user perspective. I include a section for <i>Pain Points </i>under each Persona. This helps ensure that the design will not just solve marketing or engineering problems, and that solving user problems are kept at the forefront of design activities.'"  ontouchend=" document.getElementById('intellectual').style.transform = 'scale(1.0) rotate(350deg) translate(12em) rotate(-350deg)'; document.getElementById('divtext').style.opacity= '0'"  href="#">Define</a></li>
+		
+		
+		
+		
+		
+		<li><a id="spiritual"  onmouseenter=" document.getElementById('spiritual').style.transform = 'scale(1.1) rotate(51deg) translate(12.1em) rotate(-51deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have heavily contributed to Ideation due to my many years of prototyping experience with HTML, JavaScript, and Responsive design. I can very rapidly create interactive designs that capture various solutions that are being proposed by the Product Owner, Users, Developers, and UX. This helps create consensus and promote inclusion within team to consider various concepts and select the best solution for the user.'"  onmouseleave=" document.getElementById('spiritual').style.transform = 'scale(1.0) rotate(51deg) translate(12em) rotate(-51deg)'; document.getElementById('divtext').style.opacity= '0'"                        ontouchstart=" document.getElementById('spiritual').style.transform = 'scale(1.1) rotate(51deg) translate(12.1em) rotate(-51deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have heavily contributed to Ideation due to my many years of prototyping experience with HTML, JavaScript, and Responsive design. I can very rapidly create interactive designs that capture various solutions that are being proposed by the Product Owner, Users, Developers, and UX. This helps create consensus and promote inclusion within team to consider various concepts and select the best solution for the user.'"  ontouchend=" document.getElementById('spiritual').style.transform = 'scale(1.0) rotate(51deg) translate(12em) rotate(-51deg)'; document.getElementById('divtext').style.opacity= '0'"class="spiritual" href="#" style=" transition: .75s ease-in-out; visibility: hidden">Ideate</a></li>
+		
+	
+		
+		<li><a id="occupational" class="occupational" style=" transition: .75s ease-in-out; visibility: hidden" onmouseenter=" document.getElementById('occupational').style.transform = 'scale(1.1) rotate(130deg) translate(12.1em) rotate(-130deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='Design is a continuum, and as such each level of complexity from wireframing to the polished final look needs to be implemented during the design phase. Given my skills to create prototypes in web technologies I have been able to deliver the appropriate level of interaction during the prototype phase in design thinking.'"  onmouseleave=" document.getElementById('occupational').style.transform = 'scale(1.0) rotate(130deg) translate(12em) rotate(-130deg)'; document.getElementById('divtext').style.opacity= '0'"                  ontouchstart=" document.getElementById('occupational').style.transform = 'scale(1.1) rotate(130deg) translate(12.1em) rotate(-130deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='Design is a continuum, and each level of design from wireframing to the polished final look needs to be implemented. Given my skills to directly prototype in web technologies, I can present all the three main components of the design look & feel for user and stakeholder feedback: Information Architecture, Interaction Design, and Visual Design. This includes animations and all the richness of CSS3 and HTML5.'"  ontouchend=" document.getElementById('occupational').style.transform = 'scale(1.0) rotate(130deg) translate(12em) rotate(-130deg)'; document.getElementById('divtext').style.opacity= '0'"href="#">Prototype</a></li>
+		
+		
+		
+		
+		<li><a id="emotional" class="emotional" onmouseenter=" document.getElementById('emotional').style.transform = 'scale(1.1) rotate(190deg) translate(12.1em) rotate(-190deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='The rich interactive designs that I create have helped with A/B testing early in the design (formative testing), and with lab testing for the final design (summative testing). This ensures that the design will ultimately support user tasks in a manner that meets their expectations.'"  onmouseleave=" document.getElementById('emotional').style.transform = 'scale(1.0) rotate(190deg) translate(12em) rotate(-190deg)'; document.getElementById('divtext').style.opacity= '0'"                   ontouchstart=" document.getElementById('emotional').style.transform = 'scale(1.1) rotate(190deg) translate(12.1em) rotate(-190deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='The rich interactive designs that I create have helped with A/B testing early in the design (formative testing), and with lab testing for the final design (summative testing). This ensures that the design will ultimately support user tasks in a manner that meets their expectations which also reduces rework on the part of development teams.'"  ontouchend=" document.getElementById('emotional').style.transform = 'scale(1.0) rotate(190deg) translate(12em) rotate(-190deg)'; document.getElementById('divtext').style.opacity= '0'"style=" transition: .75s ease-in-out; visibility: hidden"  href="#">Test</a></li>
+		
+	
+	
+		
+	</ul>
+	
+	<div style="display:none">
+	
+	<form method="post">
+				<input onclick=" document.getElementById('spiritual').style.transform = 'scale(1.1) rotate(51deg) translate(10em) rotate(-51deg)'" name="Button1" type="button" value="button"></form>
+  
+  
+  
+  <form method="post">
+				<input onclick=" document.getElementById('spiritual').style.transform = 'scale(1.0) rotate(51deg) translate(12em) rotate(-51deg)'" name="Button1" type="button" value="button"></form>
+
+    
+  <form method="post">
+				<input id="back" onclick=" document.getElementById('spiritual').style.transform = ' rotate(-90deg) translate(12em) rotate(180deg)'; document.getElementById('intellectual').style.transform = ' rotate(-90deg) translate(12em) rotate(180deg)'; document.getElementById('occupational').style.transform = ' rotate(-90deg) translate(12em) rotate(180deg)'; document.getElementById('emotional').style.transform = ' rotate(-90deg) translate(12em) rotate(180deg)' " name="Back" type="button" value="Back"></form>
+
+  <form method="post">
+				<input onclick=" document.getElementById('spiritual').style.transform = ' rotate(50deg) translate(12em) rotate(-50deg)'; document.getElementById('intellectual').style.transform = ' rotate(350deg) translate(12em) rotate(-350deg)'; document.getElementById('occupational').style.transform = ' rotate(130deg) translate(12em) rotate(-130deg)'; document.getElementById('emotional').style.transform = ' rotate(190deg) translate(12em) rotate(-190deg)' " name="Button1" type="button" value="Forward"></form>
+
+</div>
+	
+</div>
+<!-- partial -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+		
+
+ 
+ 
+ 
+ 
+ 
+ <br>
+ <br>
+ <br>
+ 
+ <br>
+ <br>
+ <br>
+
+
+</DIV>
+	
+	<script type="text/javascript" src="javascript/wz_tooltip.js"></script>
+	
+	
+<!-- for adding the responsive image map -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+<!-- for adding the responsive image map -->
+<script  src="javascript/jquery.rwdImageMaps.js"></script>
+<script  src="javascript/jquery.rwdImageMaps.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="javascript/bubble.js"></script>
+
+
+
+</body>
+</html>

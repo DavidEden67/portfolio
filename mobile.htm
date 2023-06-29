@@ -1,0 +1,783 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  
+
+  <style type="text/css">
+  /*responsive images*/
+       .wrap {
+      overflow: hidden;
+      margin: 25px;
+      padding: 10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      
+
+    }
+    
+    .box2 {
+      float: left;
+      position: relative;
+      
+
+    }
+
+    
+    
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+  height:100%;
+     
+       }
+    .boxInner img {
+
+     object-fit: cover;
+     width: 100%;
+    
+
+    }
+    
+    
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 0px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color:   #FFFFB3;
+      padding: 5px;
+      text-align: left;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      height: 42px;
+      font-size:12px;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:100%;
+       font-weight:bold;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+         @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box {
+    width: 100%;
+        padding-bottom:70%;   
+        margin-bottom:2%;        
+        }
+    }
+
+    @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box {
+       width: 50%;
+    
+        padding-bottom:35%;   
+        margin-bottom:2%;    
+      }
+    }
+    
+    
+    
+    
+                   @media only screen and (max-width : 1050px) and (min-width : 200px) {
+      /* Small desktop / ipad view: 1 tile */
+      .box2 {
+    
+      width: 100%;
+ 
+        padding-bottom:80%;   
+        margin-bottom:2%;     
+        }
+    }
+
+        @media only screen and (min-width : 1051px) {
+      /* Medium desktop: 42 tiles */
+      .box2 {
+      width: 50%;
+    
+        padding-bottom:40%;   
+        margin-bottom:2%;     
+      }
+    }
+
+  .style1 {
+				text-align: center;
+}
+
+  .style2 {
+				text-align: left;
+}
+
+  </style>
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup in new window code -->
+<script>
+function PopupCenter(url, title, w, h) {
+    // Fixes dual-screen position                         Most browsers      Firefox
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+    var newWindow = window.open(url, title, 'scrollbars=yes, resizable=yes, status=yes, titlebar=yes, toolbar=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+    // Puts focus on the newWindow
+    if (window.focus) {
+        newWindow.focus();
+    }
+}
+
+</script>
+
+
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+ <link rel="stylesheet" href="css/imagemap.css">
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - Mobile Design</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);">
+
+
+
+<!-- page scroll down indicator These must all appear together after the body tag -->
+<div class="progress-wrap" title="Back to Top">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" >
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+
+  <link rel="stylesheet" href="_scrollprogress/backtotop.css">
+ 	<script type="text/javascript"  src="_scrollprogress/backtotop.js"></script>
+ <script src='_scrollprogress/jquery.min.js'></script>
+
+<!-- END page scroll down indicator These must all appear together after the body tag -->
+
+
+
+
+
+<div class="top-container" >
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 700);"  >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" class="selected" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);">My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a  style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 600);"><nobr>Application Design</nobr></a></span></a>
+  <a  href="javascript:void(0)"   ><span class="ripple"><a class="linkselected" style="cursor:default"  onclick=" setTimeout(function(){window.location.href = 'mobile.htm';}, 600);" ><nobr>Mobile Design</nobr></a></span></a>
+  
+    <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'web.htm';}, 600);"  ><nobr>Web Design</nobr></a></span></a>
+  
+         <a href="javascript:void(0)"   ><span class="ripple"><a   style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'visual.htm';}, 600);"  ><nobr>Visual Design</nobr></a></span></a>
+  
+
+   <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'hardware.htm';}, 600);"  ><nobr>Hardware Design</nobr></a></span></a>
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+<div class="content" >
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+	<div id="mobileprinciples-section" class="scroll-section" style="margin-top: 10px; ">
+ <h4 class=" h4scrollindicator" style="text-align: center">
+	<iframe name="I2" id="I2" src="mobile_phone/tablet_vertical_and_horizontal.htm"  align="middle"  frameborder="0" scrolling="no"  style="margin-top: 20px;width: 456px; height: 590px">
+	<div class="style1">
+Your browser does not support inline frames or is currently configured not to display inline frames.
+			</div>
+			</iframe>&nbsp;</h4>
+			
+			
+			
+			
+			
+			
+			
+			
+
+<div id="mobiledesign-section" class="scroll-section" >
+  <h4 class=" h4scrollindicator">How I design for touchscreens</h4>
+		<p>
+One of the most significant challenges with touch interaction design is that 
+users hold and interact with mobile devices differently. User&#39;s physical 
+characteristics also play a major factor. I adhere to the following rules when 
+designing for mobile and touchscreen devices:<ul>
+				<li>Controls must be 7-10mm so that they can be tapped 
+				accurately.</li>
+				<li>Visual Design must clearly show contrast among 
+				controls and the screen background without requiring too much user 
+				concentration.</li>
+				<li>Interaction Design must clearly provide feedback when an 
+				object as been tapped and if the user needs to wait for the 
+				action to be completed.</li>
+				<li>Text must be easy to read without having to pinch and zoom.</li>
+				<li>Device orientation must be treated differently since text 
+				and other objects can appear smaller in portrait view.</li>
+				<li>Design for hand position in a way that the most frequently 
+				used controls are within the reach of the thumb, and that the 
+				user can scroll with the thumb without tapping on unintended 
+				objects.</li>
+				<li>Minimize the need for typing by creating shortcuts or by storing frequently used preferences.</li>
+	</ul>
+	<p>
+These are some of the main reasons that lead me to create and user test a prototype on the 
+mobile device itself even if the lifelike PC simulations meet all the design 
+objectives.<p class="style1">
+<img alt="" src="images/grips.png" width="720" style="height: 288px"><br>
+	
+		
+		
+</div>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	<h4 class=" h4scrollindicator">My approach to responsive design</h4>
+ 
+	<p  >The key to my successful responsive design is understanding the technology 
+	behind it, which constantly forces me to consider how the 
+	interface should display properly on different screen sizes and orientations. </p>
+	<p  >For example, please open the following link and change the browser 
+	width in a fully responsive interaction that I have provided. As you can 
+	see, we can effectively create responsive layouts with CSS and test the user 
+	experience. This becomes essential when a designer needs to consider the 
+	many nuances in responsive design that are simply beyond the capabilities of 
+	most wireframing tools.</p>
+	<table style="width: 100%">
+					<tr>
+									<td class="style1">
+
+<img  onclick="PopupCenter('responsive/index.html','xtf','900','500');  " src="responsive/responsive.png" style="cursor: pointer; box-shadow:  -1px 2px 6px 4px #4C4C4C ;  " ></td>
+					</tr>
+	</table>
+&nbsp;<p class="style2" >Responsive design should also be specifically optimized 
+	for target devices based on width, pixel-ratio, and orientation (iPad in the example below in 
+	both Portrait and Landscape). The font and images should appear crisp and easy to read without forcing the user 
+to pinch and zoom the screen. For example, I had to implement the following 
+	prototype in CSS and HTML to show how it actually rendered on iPad to 
+	discover usability issues.</p>
+	<p class="style2" >My design is also optimized for tablets based on CSS 
+	Media Rules for specific device-width, pixel-ratio, and device orientation (iPad 
+	in the example below). </p>
+	<p class="style2" >/* iPad Portrait Orientation */ </p>
+	<p class="style2" >@media only screen </p>
+	<p class="style2" >and (min-device-width: 768px) </p>
+	<p class="style2" >and (max-device-width: 1024px) </p>
+	<p class="style2" >and (-webkit-min-device-pixel-ratio: 1) </p>
+	<p class="style2" >and (orientation: portrait){ </p>
+	<p class="style2" >} </p>
+	<p class="style2" >&nbsp;</p>
+	
+	
+	<div class="wrap effect8" style="display: block; " >
+    <!-- Define all of the tiles: -->
+    				<div class="box" >
+									<div class="boxInner" style="border-radius: 5px; ">
+													<img src="images/ipad3.png" />
+													<div class="titleBox" >
+																My web app optimized for iPad Mini based on CSS device pixle-ratio and orientation rules for landscape view. </div>
+									</div>
+					</div>
+					<div class="box" >
+									<div class="boxInner" style="border-radius: 5px; ">
+													<img  src="images/ipad4.png"   />
+													<div class="titleBox"  >
+																		My web app optimized for iPad Mini based on CSS device pixle-ratio and orientation rules for portrait view. </div>
+									</div>
+					</div>
+								</div>
+						
+	
+  <!-- /#wrap -->
+	
+
+	
+	<br>
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="salesforce-section" class="scroll-section" style="margin-top: 10px">
+   <h4 class=" h4scrollindicator">Some apps I have designed</h4>
+   
+	<p>I have designed a variety of apps for the companies that I have worked 
+	for. The following are some examples with all proprietary material removed 
+	from the original screens.</p>
+
+
+<div id="salesforce-section" class="scroll-section" >
+   <h4 class=" h4scrollindicator">IBM Sales Team App</h4>
+
+		<p>The first app that I designed at IBM was for the IBM Sales Team. The 
+		sales force 
+		consisted of true road warriors who engaged the customers and impacted 
+		the company bottom line more than any other. UX owed it to them to help 
+		create an app to give them an edge over the competition. My mission was 
+		to create a focus group of the people who actually worked in the 
+		trenches; understand their goals and pain points, and build an app on 
+		top of it.&nbsp; The sales team members (no matter what company they 
+		work for) seem to have the following common goals and pain points: </p>
+	<p style="padding-left: 30px; padding right: 30px; padding-top: 5px; padding-bottom: 5px; ">
+	How can I get immediately alerted when there is an opportunity in my area of 
+	interest, such as&nbsp; an announcement by a company that they need to 
+	purchase 10 million dollars worth of servers? If I decide to pursue that 
+	opportunity, how will it change my annual sales target and will I be able to reach 
+	or exceed it? How will it change my commission? How can I see not only how I 
+	am doing individually but my entire team in terms of the annual sales 
+	targets?</p>
+</div>
+
+
+		<p>Initial user research revealed that app users did not want to 
+		see and do anything and everything on their mobile devices. For example, 
+		they wanted to use the desktop version of the app for more complex tasks 
+		such as creating spreadsheets. The sales team wanted the mobile app to 
+		create awareness and alert them to critical information while on the 
+		road.</p>
+	<p>As such the 80/20 rule very much applied to the information architecture 
+	of the app: the small screen had to give clear priority to the 20% of 
+	the features that were used over 80% of the time. Further, I had to figure 
+	out how to start from the high level visual information and progressively 
+	narrow it down to show more details. Bootstrap actually provided me with what I 
+	needed. The Accordion Panel and the Carousel widget helped me include more details for each visual piece of information 
+	without cluttering up the screen.</p>
+	<p ><span class="style15">I have included some examples below of my 
+	Bootstrap app design while removing any 
+	propriety information from the screens. 
+	</span><span class="style16">
+	</span><span class="style15">The screenshots are of iPhone and were taken with a 
+	mirroring tool called </span><em><span class="style15">iTools</span></em>.</p>
+	
+	
+<div class="wrap effect8" style="display: block; margin-top:-5px" >
+    <!-- Define all of the tiles: -->
+    				<div class="box">
+									<div class="boxInner">
+													<img src="images/mobileapp1.PNG" />
+													<div class="titleBox" style="left: 0; right: -50; bottom: 0">
+																Using Bootstrap to display charts and graphs in an app. </div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													<img  src="images/mobileapp2.PNG"   />
+													<div class="titleBox"  >
+																		Bootstrap Accordion Panels (collapsed mode) to help layer information (second layer of information).</div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													<img  src="images/mobileapp3.PNG"  />
+													<div class="titleBox">
+																	Bootstrap Accordion Panels (expanded mode) to help layer information (second layer of information).</div>
+									</div>
+					</div>
+					<div class="box">
+									<div class="boxInner">
+													
+													<img  src="images/mobileapp4.PNG"    />
+													<div class="titleBox">
+																	
+																																		
+																		Bootstrap Carousel to help display more information (third layer of information).</div>
+									</div>
+					</div>
+	</div>
+  <!-- /#wrap -->
+
+
+
+
+	
+
+
+
+
+
+
+
+<div id="toc-section" class="scroll-section" >
+  <h4 class=" h4scrollindicator">Boeing <em>Electronic Just In Time Testing</em> App 
+	(eJITT)</h4>
+		<p>
+		eJITT was the most impactful mobile application that was designed by 
+		User Experience at Boeing Commercial, and I was very proud to be a part 
+		of it. By applying user research and Design Thinking the problem 
+		statement boiled down to the following.</p>
+		
+		
+		<div style="margin-left:30px">
+	<p>
+		Problem Statement:</p>
+	<p style="padding-left: 30px; padding right: 30px; margin-top: -10px; padding-bottom: 5px; ">
+	There are over 400 functional tests that must be performed on each airplane 
+	by Quality Assurance and Shop (technicians) separately. All the functional 
+	tests are currently done using paper records, causing significant effort and delay 
+	to print and record the results of functional tests by each persona and then 
+	compare the results manually to certify an airplane.</p>
+	
+	<p >
+Purposed Solution:<ul >
+				<li style="margin-top:-15px" >Each functional test must be recorded electronically on a 
+				mobile tablet device which can be carried around the airplane 
+				without any need for paper records.</li>
+				<li>By electronically comparing the test results from QA and Shop, a 
+				significant amount of time will be saved over comparing 
+				the test results manually thus streamlining the user workflow.</li>
+				<li>The electronic system must be intelligent. For example, certain 
+				fields must only accept numeric values or certain number of 
+				decimal points. </li>
+				<li>System must intelligently alert the user to data entry 
+				errors.</li>
+				<li>Users must be able to access online help for 
+				data entry which is currently lacking.</li>
+				<li>System must alert the user to which tests have not been 
+				completed (e.g., number of tests not completed or percent 
+				completion).</li>
+	</ul>
+	
+	The mobile app that I designed not only vastly streamlined the user workflow and reduced cognitive load, but it also 
+	contributed to the bottom line by saving airplane build by about 94 hours per 
+	airplane. The usability of the design itself benefited from much of the 
+	mobile design principles that I discussed earlier in this section.</div>
+
+	
+
+
+
+<div id="toc-section" class="scroll-section" >
+  <h4 class=" h4scrollindicator">Boeing Flight Test App</h4>
+		<p>
+		I have already covered Boeing Fight Test under the Application 
+		Design section in my portfolio. However, one of the best rewards of 
+		working on this project was the creation of my first mobile application: 
+		a highly useful app that allowed our user base to track when the 
+		test airplanes were out of the gate, off the ground, on the ground, and in the 
+		gate. Further, users could be alerted if there was an emergency 
+		situation with any 
+		of the airplanes and get involved right away. Previously our users were 
+		glued to their computers to watch the flight status of the airplanes 
+		and detect if there was an emergency situation with them. With the mobile app 
+		the data could be directly transmitted from the Operations Center to the mobile app, freeing 
+		our users from having to monitor test airplanes constantly and as such 
+		they could use their time to do far more productive tasks while the 
+		app monitored the airplane status for them.
+		<br>
+		<br>
+		</p>
+	<p></p>
+		<p></p>
+	
+</div>
+
+
+</div>
+
+
+</div>
+
+	
+	<script type="text/javascript" src="_javascript/wz_tooltip.js"></script>
+	
+	
+<!-- for adding the responsive image map -->
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+<!-- for adding the responsive image map -->
+<script  src="_javascript/jquery.rwdImageMaps.js"></script>
+<script  src="_javascript/jquery.rwdImageMaps.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="_javascript/bubble.js"></script>
+
+
+
+</body>
+</html>

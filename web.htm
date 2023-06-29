@@ -1,0 +1,722 @@
+﻿<!DOCTYPE html>
+<html >
+
+<head>
+
+
+
+  <link rel="stylesheet" href="carousel/style.css">
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<script>
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+</script>
+    
+
+<style>
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
+/*Carousel*/ 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+
+<style>
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.button2 span:before {
+
+  content: '\00ab ';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0px;
+  transition: 0.5s;
+}
+
+
+.button2:hover span {
+  padding-left: 25px;
+}
+
+.button2:hover span:before {
+  opacity: 1;
+  left: 40;
+}
+</style>
+
+
+
+
+
+
+<!-- Carousel -->
+<script>
+function runsettimeout() {
+document.getElementById('next2').click();
+}
+
+</script>
+
+<script>
+function runsettimeout2() {
+document.getElementById('next').click();
+}
+
+</script>
+
+
+
+
+    <style media="screen">
+
+    .container {
+      width: 210px;
+      height: 140px;
+      position: relative;
+      margin: 0 auto 40px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1100px;
+         -moz-perspective: 1100px;
+           -o-perspective: 1100px;
+              perspective: 1100px;
+    }
+
+    #carousel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform: translateZ( -288px );
+         -moz-transform: translateZ( -288px );
+           -o-transform: translateZ( -288px );
+              transform: translateZ( -288px );
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+    }
+
+    #carousel figure {
+      display: block;
+      position: absolute;
+      width: 160px;
+      height: 116px;
+      left: 10px;
+      top: 10px;
+      border: 1px solid black;
+      line-height: 116px;
+      font-size: 0px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+   
+
+    #carousel figure:nth-child(1) {
+      -webkit-transform: rotateY(   -0deg ) translateZ( 288px );
+         -moz-transform: rotateY(   -0deg ) translateZ( 288px );
+           -o-transform: rotateY(   00deg ) translateZ( 288px );
+              transform: rotateY(   00deg ) translateZ( 288px );
+            
+    }
+    #carousel figure:nth-child(2) {
+      -webkit-transform: rotateY(  33deg ) translateZ( 288px );
+         -moz-transform: rotateY(  33deg ) translateZ( 288px );
+           -o-transform: rotateY(  33deg ) translateZ( 288px );
+              transform: rotateY(  33deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(3) {
+      -webkit-transform: rotateY(  66deg ) translateZ( 288px );
+         -moz-transform: rotateY(  66deg ) translateZ( 288px );
+           -o-transform: rotateY(  66deg ) translateZ( 288px );
+              transform: rotateY(  66deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(4) {
+      -webkit-transform: rotateY( 99deg ) translateZ( 288px );
+         -moz-transform: rotateY( 99deg ) translateZ( 288px );
+           -o-transform: rotateY( 99deg ) translateZ( 288px );
+              transform: rotateY( 99deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(5) {
+      -webkit-transform: rotateY( 132deg ) translateZ( 288px );
+         -moz-transform: rotateY( 132deg ) translateZ( 288px );
+           -o-transform: rotateY( 132deg ) translateZ( 288px );
+              transform: rotateY( 132deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(6) {
+      -webkit-transform: rotateY( 165deg ) translateZ( 288px );
+         -moz-transform: rotateY( 165deg ) translateZ( 288px );
+           -o-transform: rotateY( 165deg ) translateZ( 288px );
+              transform: rotateY( 165deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(7) {
+      -webkit-transform: rotateY( 198deg ) translateZ( 288px );
+         -moz-transform: rotateY( 198deg ) translateZ( 288px );
+           -o-transform: rotateY( 198deg ) translateZ( 288px );
+              transform: rotateY( 198deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(8) {
+      -webkit-transform: rotateY( 231deg ) translateZ( 288px );
+         -moz-transform: rotateY( 231deg ) translateZ( 288px );
+           -o-transform: rotateY( 231deg ) translateZ( 288px );
+              transform: rotateY( 231deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(9) {
+      -webkit-transform: rotateY( 264deg ) translateZ( 288px );
+         -moz-transform: rotateY( 264deg ) translateZ( 288px );
+           -o-transform: rotateY( 264deg ) translateZ( 288px );
+              transform: rotateY( 264deg ) translateZ( 288px );
+    }
+    
+        #carousel figure:nth-child(10) {
+      -webkit-transform: rotateY( 297deg ) translateZ( 288px );
+         -moz-transform: rotateY( 297deg ) translateZ( 288px );
+           -o-transform: rotateY( 297deg ) translateZ( 288px );
+              transform: rotateY( 297deg ) translateZ( 288px );
+    }
+    #carousel figure:nth-child(11) {
+      -webkit-transform: rotateY( 330deg ) translateZ( 288px );
+         -moz-transform: rotateY( 330deg ) translateZ( 288px );
+           -o-transform: rotateY( 330deg ) translateZ( 288px );
+              transform: rotateY( 330deg ) translateZ( 288px );
+    }
+
+    
+    
+    
+
+  .style4 {
+				background-color: transparent;
+}
+
+  .style5 {
+				background-color: #F3F3F3;
+}
+
+  </style>
+
+
+
+<link rel="icon" type="image/PNG" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/PNG" href="favicon.PNG" sizes="16x16" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup in new window code -->
+<script>
+function PopupCenter(url, title, w, h) {
+    // Fixes dual-screen position                         Most browsers      Firefox
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+    var newWindow = window.open(url, title, 'scrollbars=yes, resizable=yes, status=yes, titlebar=yes, toolbar=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+    // Puts focus on the newWindow
+    if (window.focus) {
+        newWindow.focus();
+    }
+}
+
+</script>
+
+
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+ <link rel="stylesheet" href="css/imagemap.css">
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<title>David Eden Portfolio - Web Design</title>
+
+
+
+
+
+
+
+
+</head>
+
+<body id="body" onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);   $(window).scrollTop(100);">
+
+<div class="top-container" >
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="header" id="myHeader">
+
+
+
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" style=" z-index :6; position:relative" onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 700);"  >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative" class="selected" onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);">My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a  style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 600);"><nobr>Application Design</nobr></a></span></a>
+  
+   
+    <a href="javascript:void(0)"   ><span class="ripple"><a class="linkselected" style="cursor:default" onclick=" setTimeout(function(){window.location.href = 'web.htm';}, 600);"  ><nobr>Web Design</nobr></a></span></a>
+       <a href="javascript:void(0)"   ><span class="ripple"><a   style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'visual.htm';}, 600);"  ><nobr>Visual Design</nobr></a></span></a>
+  
+
+   <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'hardware.htm';}, 600);"  ><nobr>Hardware Design</nobr></a></span></a>
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+
+
+<div class="content" >
+
+
+<p ><span class=" pagetitle">Web&nbsp; Design</span></p>
+
+<p>I worked as a freelance web designer for several years. While balancing 
+freelance web design with other responsibilities was difficult and challenging 
+at times, the experience on the other hand has been quite valuable and 
+rewarding. Freelance web design has helped me hone my HTML, CSS, and 
+graphics design skills in ways that would have been difficult to accomplish in a 
+more rigid corporate design environment. Working with my own customers was also 
+beneficial in understanding different personas and their needs.</p>
+<p>I have shared some examples of my websites during the past few years. 
+<span class="style5">You may 
+spin the carousel or double-click on thumbnails to open a larger image.</span> </p>
+
+
+
+<br>
+<br>
+
+
+<!-- partial:index.partial.html -->
+<div id="drag-container" style="padding: 25px;z-index :100" >
+  <div id="spin-container" style="z-index:100; "  >
+    <!-- Add your images (or video) here -->
+    <img id="img1"     class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/steff.PNG'" src="carousel/steffs.png" alt="">
+    <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/kim.PNG'" src="carousel/kims.png"  alt="">
+        <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/asic.PNG'" src="carousel/asics.png"  alt="">
+        <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/kendra.PNG'" src="carousel/kendras.png"  alt="">
+        <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/cai.PNG'" src="carousel/cais.png"  alt="">
+                <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/august.PNG'" src="carousel/augusts.png"  alt="">
+                <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/cyberlynx.PNG'" src="carousel/cyberlynxs.png"  alt="">
+                <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/brian.PNG'" src="carousel/brians.png"  alt="">
+                <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/whisper.JPG'" src="carousel/whispers.jpg"  alt="">
+                <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/light.PNG'" src="carousel/lights.png"  alt="">
+                    <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/Fastsilks.JPG'" src="carousel/Fastsilkss.jpg"  alt="">
+                                    <img  class="my_popup_open" onclick="document.getElementById('popuppic').src='carousel/elegantasians.png'" src="carousel/elegantasian.PNG"  alt="">
+    <!-- Text at center of ground -->
+    <p style="color:black; font-family:Arial"><nobr>David Eden Portfolio</nobr></p>
+  </div>
+  <div id="ground"></div>
+</div>
+
+<div id="music-container"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</div>
+
+	
+
+<script src="carousel/utils.js"></script>
+   <script>
+    var init = function() {
+      var carousel = document.getElementById('carousel'),
+          navButtons = document.querySelectorAll('#navigation button'),
+          panelCount = carousel.children.length,
+          transformProp = Modernizr.prefixed('transform'),
+          theta = 0,
+
+          onNavButtonClick = function( event ){
+            var increment = parseInt( event.target.getAttribute('data-increment') );
+            theta += ( 360 / panelCount ) * increment * -1;
+            carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+          };
+
+      for (var i=0; i < 3; i++) {
+        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+      }
+
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+  </script> 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Include jQuery -->
+  <script src="carousel/jquery-1.8.2.min.js"></script>
+
+  <!-- Include jQuery Popup Overlay -->
+  <script src="carousel/jquery.popupoverlay.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+
+<!-- Add content to the popup -->
+  <div  id="my_popup" style="background-color : white; overflow-y: hidden; border : 0px solid black; padding: 0px;width : 50%; height: auto; border: 0px solid black;">
+
+        
+    
+    
+    
+
+  	<table style="width: 100%; height: 100% " class="style4" cellspacing="0" cellpadding="0">
+					<tr>
+									<td style="height: 40px; width: 100%; padding-left: 15px" class="style57">
+									<strong>Customer Websites 
+									<img alt="" style=" z-index:900; cursor:pointer; float: right;" onclick="document.getElementById('body').style.overflow='visible'  ;document.body.style.overflow = 'visible'; $('body').css('overflow', 'visible');" class="my_popup_close" src="carousel/close_button.PNG" width="24" height="24"></strong></td>
+									<td style="padding-right: 15px;height : 40px" class="style56">
+									&nbsp;</td>
+					</tr>
+					<tr>
+									<td colspan="2" align="center" style="padding-bottom: 0px;width :100% " valign="bottom" >
+									
+									
+									
+									
+									
+									
+									
+									<img alt="" id="popuppic" src="carousel/cyberlynx.JPG"  style="margin-bottom: -10px;  object-fit: cover;  max-width:100%;  height:auto"></td>
+					</tr>
+					</table>
+    
+    
+    
+    
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Activate Stikcy Header -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+
+<!-- Activate bubble onclick -->
+<script  src="javascript/bubble.js"></script>
+
+<script  src="carousel/script.js"></script>
+
+</body>
+</html>
