@@ -1,0 +1,134 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+* {
+}
+
+
+
+.chk-toggle {
+  display: none;
+
+}
+
+
+
+
+/* New switch */
+
+.new-switch {
+	width: 80px;
+	height: 23px;
+	
+	
+	border-radius: 50px;
+	background: linear-gradient(180deg, #c4c4c4, #f2f2f2);
+	padding: 8px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #c4c4c4;
+;
+}
+
+.new-off, .new-on, .new-toggler {
+	position: absolute;
+	
+	width: 63px;
+	height: 19px;
+	
+	border-radius: 25px;
+	top: 5px;
+	left: 8px;
+}
+
+.new-off {
+	background: #7c7c7c;
+	background: linear-gradient(#7c7c7c, #a5a5a5, #7c7c7c);
+	color: black;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+	padding: 8px 0 0 15px;
+	transition: 0.3s;
+	z-index: 2;
+	
+	
+	height: 75%;
+	width:71%;
+	padding-top:2px;
+
+}
+
+.new-toggler {
+	background: #d8d8d8;
+	background: -o-linear-gradient(-135deg, #d8d8d8, #ffffff);
+	background: -ms-linear-gradient(-135deg, #d8d8d8, #ffffff);
+	background: -webkit-linear-gradient(-135deg, #d8d8d8, #ffffff);
+	background: -moz-linear-gradient(-135deg, #d8d8d8, #ffffff);
+	background: linear-gradient(-135deg, #d8d8d8, #ffffff);
+	border-bottom: 2px solid #cecece;
+	border-left: 2px solid #cecece;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	border-radius: 50%;
+	
+	height: 20px;
+	width: 20px;
+	left: 60px;
+	top: 8px;
+	
+	position: absolute;
+	transform: rotate(-45deg);
+	transition: 0.2s;
+	z-index: 3;
+	box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.new-toggler:after {
+	background: #a4a4a4;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px white;
+	content: "";
+	height: 15px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 15px;
+  
+}
+
+.new-on {
+	background: #e08200;
+	  background: linear-gradient(90deg, #00CC00, #8add7a);
+
+	text-align: right;
+	color: green;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+	transition: 0.3s;
+	opacity: 0;
+	z-index: 1;
+	font-weight:bold;
+	
+	height: 75%;
+	width:72%;
+	padding-right:10px;
+	padding-top:2px;
+
+}
+
+.chk-toggle:checked + .new-switch .new-toggler {
+  	left: 16px;
+  	
+}
+
+.chk-toggle:checked + .new-switch .new-off {
+  	opacity: 0;
+}
+
+.chk-toggle:checked + .new-switch .new-on {
+  	opacity: 1;
+}
+
+.chk-toggle:checked + .new-switch .new-toggler:after {
+  	background:   #00CC00;
+}
+

@@ -1,0 +1,287 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+body {
+ }
+.showOverlay {
+  bottom: 0;
+  display: flex;
+  font-size: 16px;
+  left: calc(50% - 55px);
+  margin-bottom: 7px;
+  position: absolute;
+}
+.check {
+  bottom: 0;
+  display: flex;
+  left: calc(50% + 40px);
+  margin-bottom: 10px;
+  position: absolute;
+}
+.containerOuter {
+
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 2px 6px 20px 2px rgba(10,10,120,0.15);
+   height: 140px;
+}
+.container {
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 145px;
+  
+}
+.hidden {
+  display: none;
+}
+.entry {
+  height: 15px;
+  position: absolute;
+  width: 130px;
+}
+.entry:nth-child(2) {
+  left: 8px;
+  top: 8px;
+}
+.entry:nth-child(4) {
+  left: 8px;
+  top: 58px;
+}
+.entry:nth-child(6) {
+  left: 8px;
+  top: 108px;
+}
+.circle {
+  border: 2px solid #545556;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  position: absolute;
+  transition: border-color 300ms;
+  width: 10px;
+}
+.entry-label {
+  cursor: pointer;
+  margin-top: -5px;
+  padding-left: 20px;
+  user-select: none;
+  -moz-user-select: none;
+}
+.overlay {
+  background: transparent;
+  mask: url(#holes);
+
+  height: 140px;
+  pointer-events: none;
+  transition: background 300ms;
+  width: 40px;
+  
+  
+}
+.highlight {
+  background: #4D98EF;
+  border-radius: 50%;
+
+  
+  pointer-events: none;
+  position: absolute;
+  transition: transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.2);
+  transform: translateY(-50px);
+  
+  left: 11.5px;
+  top: 11.5px;
+ width: 6px;
+    height: 6px;
+}
+.hidden:nth-child(1):checked ~ .highlight {
+  transform: translateY(0);
+}
+.hidden:nth-child(3):checked ~ .highlight {
+  transform: translateY(50px);
+}
+.hidden:nth-child(5):checked ~ .highlight {
+  transform: translateY(100px);
+}
+.hidden:nth-child(1):checked + .entry .circle {
+  border-color: #4D98EF;
+}
+.hidden:nth-child(3):checked + .entry .circle {
+  border-color: #4D98EF;
+}
+.hidden:nth-child(5):checked + .entry .circle {
+  border-color: #4D98EF;
+}
+.check:checked ~ .containerOuter .overlay {
+  background: #ecf0f4;
+}
+
+
+
+
+
+
+/*checkbox*/
+
+.form-check-input[type="checkbox"] {
+  --checkbox-bg-color: white;
+  --border-color: #ccd1d9;
+  --checkbox-hover-color: #aab2bd;
+  --checkbox-checked-color: #3bafda;
+  --checkbox-disabled-bg-color: #e6e9ed;
+  --checkbox-disabled-checked-color: #aab2bd;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  background: var(--checkbox-checked-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-check-input[type="checkbox"] ~ .form-check-label {
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-check-input[type="checkbox"]::before {
+  position: absolute;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18px' height='18px' fill='none' stroke-width='2px' stroke='white' stroke-linecap='round' viewBox='0 0 21 21'%3E%3Cpolyline points='5 10.75 8.5 14.25 16 6'%3E%3C/polyline%3E%3C/svg%3E");
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-check-input[type="checkbox"]::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--checkbox-bg-color);
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--border-color);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.form-check-input[type="checkbox"]:hover {
+  --border-color: var(--checkbox-hover-color);
+}
+.form-check-input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.form-check-input[type="checkbox"]:checked::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.form-check-input[type="checkbox"]:disabled {
+  --checkbox-bg-color: var(--checkbox-disabled-bg-color);
+  --checkbox-checked-color: var(--checkbox-disabled-checked-color);
+  cursor: not-allowed;
+}
+.form-check-input[type="checkbox"]:disabled ~ .form-check-label {
+  cursor: not-allowed;
+}
+.form-check-input[type="checkbox"].bounce:checked::before {
+  -webkit-transition: none;
+  transition: none;
+  animation: scale-out-bounce 0.6s ease-out reverse forwards;
+}
+
+@-webkit-keyframes scale-out-bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  4% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  8% {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  18% {
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
+  }
+  26% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  46% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  64% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  76% {
+    -webkit-transform: scale(0.44);
+            transform: scale(0.44);
+  }
+  88% {
+    -webkit-transform: scale(0.11);
+            transform: scale(0.11);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scale-out-bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  4% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  8% {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  18% {
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94);
+  }
+  26% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  46% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  64% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  76% {
+    -webkit-transform: scale(0.44);
+            transform: scale(0.44);
+  }
+  88% {
+    -webkit-transform: scale(0.11);
+            transform: scale(0.11);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+.form-check {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
