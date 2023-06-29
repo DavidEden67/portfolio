@@ -93,7 +93,17 @@ height: 80px;  /* Used to be 100 with the logo*/
 padding-top: 20px;
 text-align: center;
 padding-bottom: 0px;
-background: linear-gradient(rgb(224, 224, 224), rgb(204, 204, 204), rgb(176, 176, 176));  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+
+background: rgb(229,221,225);
+background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);
+
+
+   
+    
+    
+ padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+ 
+ 
 }
 
 .imglogoimage{
