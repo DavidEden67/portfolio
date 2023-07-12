@@ -117,7 +117,8 @@ height: auto;
 
 h4.h4scrollindicator{  /* New Instance of h4 for jquery scroll indicator*/
 margin-bottom: -10px;
-margin-left: 10px;				
+margin-left: 10px;	
+font-size:16px;			
 }
 
 
@@ -468,6 +469,5 @@ Top: -25px;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             border-radius: 1%;
 }
-
 
 
