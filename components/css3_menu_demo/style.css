@@ -338,6 +338,10 @@ button:active {
 
 }
 
+button:hover{
+	  border: 4px solid #8F9092;
+}
+
 button.icon,
 [role="button"].icon {
   width: 50px;
