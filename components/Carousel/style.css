@@ -1,0 +1,103 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+    background:#101010;
+    font-family: monospace;
+    overflow: hidden;
+}
+.carousel{
+height: 700px;
+    perspective: 500px;
+ margin-top: -290px;;
+ scale:90%;
+margin-left: 30px
+    
+}
+.carousel .carousel-item{
+
+    cursor: pointer;
+    height:100px!important;
+  
+}
+
+.carousel .indicators .indicator-item {
+background: white;
+        height: 6px !important;
+        width: 6px !important;
+        margin: 24px 8px !important;
+     
+        border-radius: 5px !important;
+        width: 25%;
+    }
+    
+    
+    
+    
+    
+    
+   .carousel .indicators {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+top: 620px;
+
+color:red;
+} 
+    
+    
+    .carousel .indicators .indicator-item.active {
+  background-color: blue;
+}
+    
+    .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+  bottom: 68px;
+}
+    
+    
+    
+    .carousel .indicators {
+
+     margin-top: 40px;
+     color:red;
+    }
+
+
+
+.carousel .carousel-item h3{
+    margin: 0;
+
+    font-weight: bold;
+    background: #fff;
+    
+
+    
+    
+    color:#000;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    text-align: center;
+    
+    
+    padding-top: 5px;
+        margin-top:-10px;
+}
+.social{
+    text-align: center;
+    margin-top:-5px;
+padding-top: 10px;
+ background-color:white;
+}
+.social a{
+    color:#000;
+    font-size: 20px;
+    padding: 0px;
+    border:0px solid #000;
+    border-radius: 5px;
+}
+
+
+
+
+
+
