@@ -2,6 +2,18 @@
 <html lang="en">
 	<head>
 	
+	<script>
+	window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+	
+	</script>
+	
+	
+	
 <style>
 
 </style>
@@ -84,7 +96,7 @@ window.FontAwesomeKitConfig = {"asyncLoading":{"enabled":false},"autoA11y":{"ena
             </div>
         </div>
 
-          <button onmouseout=" this.style.border='0px solid black' " onmousemove=" this.style.border='4px solid #8F9092' " style="transition: .3s all;margin-left :70px" onmouseup="this.style.color = this.style.color === 'blue' ? 'black' : 'blue';">Bluetooth</button>
+		<button style="margin-left:70px" class="ladda-button green expand-left"><span class="label">Refresh</span> <span class="spinner"></span></button>
           
           
    
@@ -142,7 +154,7 @@ window.FontAwesomeKitConfig = {"asyncLoading":{"enabled":false},"autoA11y":{"ena
 
 <!-- partial -->
 
-
+  <script  src="script.js"></script>
 	
 </body>
 
