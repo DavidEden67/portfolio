@@ -28,15 +28,15 @@
   box-sizing: border-box;
 }
 
-.circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
-.circle-menu a.occupational {background:#3a913f;opacity: 0.6;}
-.circle-menu a.emotional {background:#fecd06;opacity: 0.6;}
-.circle-menu a.environmental {background:#fa7f00;opacity: 0.6;}
+.circle-menu a.spiritual {background:#009cde;opacity: 0.6; cursor: default;}
+.circle-menu a.occupational {background:#3a913f;opacity: 0.6; cursor: default;}
+.circle-menu a.emotional {background:#fecd06;opacity: 0.6; cursor: default;}
+.circle-menu a.environmental {background:#fa7f00;opacity: 0.6; cursor: default;}
 
 
-.circle-menu a.intellectual {background:#ed2124;opacity: 0.6;}
-.circle-menu a.social {background:#932683;opacity: 0.6;}
-.circle-menu a.physical {background:#203864;opacity: 0.6;}
+.circle-menu a.intellectual {background:#ed2124;opacity: 0.6; cursor: default;}
+.circle-menu a.social {background:#932683;opacity: 0.6; cursor: default;}
+.circle-menu a.physical {background:#203864;opacity: 0.6; cursor: default;}
 
 
  /* 360/5= 72 roughly so for 5 elements rotate the element every 51deg. 12em translate is half the container */
