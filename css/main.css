@@ -471,3 +471,87 @@ Top: -25px;
 }
 
 
+
+/*Sticky position*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style>
+
+
+.center { text-align: center; }
+
+.container {
+  width: 90%;
+  margin-left:0px;
+  text-align:justify;
+  
+  
+
+ }
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+
+}
+
+.episode__number {
+ /* font-size: 3vw; */
+ font-family: 'Bubblegum Sans', cursive;
+ 
+ font-size:30px;
+  font-weight: 600;
+  padding: 10px 0;
+  
+  
+position: absolute;
+  position: sticky;
+  
+  top: 65px;  
+  padding-top: 45px;
+  
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+  
+
+
+
+}
+
+.episode__content {
+  border-top: 2px solid #fff;
+  display: grid;
+
+  grid-gap: 10px;
+  padding: 15px 0;
+  
+  font-size:17px;
+  letter-spacing: 0.05em!important;
+  word-spacing:0.00em!important;
+ 
+  margin-left:0px;
+  
+  line-height: 150%;
+
+}
+
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+
+
+.titlesticky{
+	visibility:hidden;
+}
