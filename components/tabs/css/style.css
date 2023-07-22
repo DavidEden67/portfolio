@@ -1341,7 +1341,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 
 .tooltip {
-  opacity: 0;
+  opacity: 1;
   transition: opacity, transform .2s ease;
   -webkit-transform: translate3d(0, 5px, 0);
   -moz-transform: translate3d(0, 5px, 0);
