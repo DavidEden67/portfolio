@@ -4,6 +4,105 @@
 <head>
 
 
+<!-- card styles -->
+<style>
+
+.zoom2 {
+ 
+   margin-top: 20px ;
+    transition: all 200ms ease-in-out;
+ background-image: url('images/journey_map.png');
+ background-size: cover;
+ background-repeat:no-repeat;
+    
+   border-radius: 6px  ;
+   
+ box-shadow: 0px 20px 40px -40px rgba(0,0,0,0.9), 0px 30px 40px -50px rgba(0,0,0,0.9);
+ float: left;
+   
+}
+
+.zoom2:hover {
+
+
+   
+    transition: all 300ms ease-in;
+    height: 300px;
+    width: 350px;
+
+
+
+
+
+   }
+
+
+.card{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 50px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+
+
+  font-family: Tahoma, Verdana, sans-serif;
+
+}
+
+
+.card  p{
+font-weight: 400;
+margin: 0px;
+font-size:14px;
+}
+
+
+
+.content3 {
+    transform: translateY(calc(350% - 2.5rem));
+    
+
+  
+  border-radius: 10px;
+     transition:  700ms cubic-bezier(0.19, 1, 0.22, 1);
+
+       transition-delay:1.5s;
+       opacity: 0;
+    color: whitesmoke;
+    padding: 5px;
+    
+     width: 100%;
+
+
+
+
+  }
+
+
+
+.card:hover .content3{
+
+  background: rgba(94,92,84,0.8);
+           opacity: 1;
+                transform: translateY(calc(300% - 7rem))  scale(1);
+        
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
 <style>
             @-moz-document url-prefix() { 
                     li { 
@@ -277,7 +376,7 @@ $(document).ready(function () {
 
 	<ul>
 	
-	<li><a id="environmental" onmouseenter=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)';  '"  onmouseleave=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; '"                ontouchstart=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have often conducted contextual inquires with the goal of creating empathy for users. Documenting the physical demands of the environments that they work in such as shops and factories, and the pain points that they experience due to poor software usability can greatly help justify the need for better design.'"  ontouchend=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '0'"  style=" transition: .75s ease-in-out; visibility: hidden"  class="environmental" href="JavaScript: Void(0)">Empathise</a></li>
+	<li><a id="environmental" onmouseenter=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)';  '"  onmouseleave=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; '"                ontouchstart=" document.getElementById('environmental').style.transform = 'scale(1.1) rotate(270deg) translate(12.1em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '1'; document.getElementById('divtext').innerHTML='I have often conducted contextual inquires with the goal of creating empathy for users. Documenting the physical demands of the environments that they work in such as shops and factories, and the pain points that they experience due to poor software usability can greatly help justify the need for better design.'"  ontouchend=" document.getElementById('environmental').style.transform = 'scale(1.0) rotate(270deg) translate(12em) rotate(-270deg)'; document.getElementById('divtext').style.opacity= '0'"  style=" transition: .75s ease-in-out; visibility: hidden"  class="environmental" href="JavaScript: Void(0)">Empathise <span style ="font-size:20px">&#8631;</span></a></li>
 		
 		
 		
@@ -398,7 +497,7 @@ much less rework.
     <div class="episode__number">3. Ideate</div>
     <div class="episode__content">
       <div class="titlesticky">Episode 2</div>
-      <div class="story">
+      <div class="story" >
 While there are many ideation techniques such as storyboarding and sketching, my favorite technique is journey mapping. This is where I can effectively
 showcase the steps that each persona will take to accomplish their goals, and list the pain points and design 
 opportunities for each step. For example, I created different journey maps for users who 
@@ -406,6 +505,21 @@ installed wireless vs. USB printers, which helped visualize the differences and 
 scenario and generated ideas to improve the onboarding experience for HP 
 printers.
 As such journey maps are a wonderful and effective technique to capture the outcome of the Ideate phase, and I share my templates with the team during and after the completion of this phase.
+<br>
+ <div class="card zoom2" style="margin-bottom:15px" >
+    <div class="content3">
+      <h4 style="margin:0px" class="title">Journey Map Example</h4>
+      <p >Improved task flow based on Ideation results.</p>
+		<p >User Pain Points and improvement opportunities for each task are identified.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
  
 
 	</div>
