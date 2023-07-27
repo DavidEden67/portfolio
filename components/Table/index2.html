@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+
+
+
+
+
+
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+select {
+    border: 0;
+    width: 100%;
+    background:transparent;
+}
+
+.date{
+	width: 95%
+}
+
+::-webkit-datetime-edit { padding: 0em; }
+::-webkit-datetime-edit { width: 100%; background:transparent }
+::-webkit-datetime-edit { border: 0%; }
+
+
+::-webkit-datetime-edit-fields-wrapper { background: transparent; }
+::-webkit-datetime-edit-text { color: black; padding: ; }
+::-webkit-datetime-edit-month-field { color: ; }
+::-webkit-datetime-edit-day-field { color: ; }
+::-webkit-datetime-edit-year-field { color: ; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: ; }
+
+input[type=date] { 
+	border: ;
+
+	background: transparent;
+	color: ;
+	padding: ;
+	font-size: ;
+}
+}
+
+</style>
+
+
+
+<script src="js/sorttable.js"></script>
+<link rel='stylesheet' href='css/jquery.resizableColumns.css'>
+
+
+<script src='js/jquery.min.js'></script>
+<script src='js/store.min.js'></script>
+<script src='js/jquery.resizableColumns.js'></script>
+<script  src="js/index.js"></script>
+
+
+
+</head>
+
+<body onload="sorttable.innerSortFunction.apply(document.getElementById('order#'), [])">
+
+  <div id="containerDiv"  style=" height: 50vh; overflow-y: scroll;   border-collapse: collapse;
+
+  border-radius: 10px; margin: 5px;
+ 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+">
+  <table class="table table-bordered sortable table-fixed"  data-resizable-columns-id="demo-table-v2">
+    <thead>
+      <tr>
+          <th style="width:30px!important"  onclick="$('#containerDiv').animate({ scrollTop: 0 }, 'fast');" id="order#" title="Click to sort, or drag colum to resize" data-resizable-column-id="first_name">Order#</th>
+        <th onclick="$('#containerDiv').animate({ scrollTop: 0 }, 'fast');" id="first_name" title="Click to sort, or drag colum to resize" data-resizable-column-id="first_name">Name</th>
+        <th class="sorttable_nosort"  onclick="$('#containerDiv').animate({ scrollTop: 0 }, 'fast');" data-resizable-column-id="last_name" title="Click to sort, or drag colum to resize">
+		Shipping</th>
+        <th class="sorttable_nosort" onclick="$('#containerDiv').animate({ scrollTop: 0 }, 'fast');" data-resizable-column-id="username" id="username-column" title="Calendar no sort">
+		Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td >166744585</td>
+        <td>Allen, Timothy&nbsp; P</td>
+        <td id="tdlastname2">
+		<select id="select0" name="Select2" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td><input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate"   max="2023-09-26" /></td>
+      
+          
+      </tr>
+      <tr>
+        <td >226744085</td>
+        <td>Baker, Malcolm K</td>
+        <td id="tdlastname1">
+		<select id="select" name="Select1" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate0"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >326744585</td>
+        <td>Banes, Malcolm R</td>
+        <td id="tdlastname3">
+		<select id="select1" name="Select3" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate1"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >336744890</td>
+        <td>Charles, Cindy S</td>
+        <td id="tdlastname4">
+		<select id="select2" name="Select4" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate2"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >426744585</td>
+        <td>Chambers, John A</td>
+        <td id="tdlastname5">
+		<select id="select3" name="Select5" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate3"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >526744585</td>
+        <td>Edwards, Mark D</td>
+        <td id="tdlastname6">
+		<select id="select4" name="Select6" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate4"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >626744585</td>
+        <td>Henry, John R</td>
+        <td id="tdlastname7">
+		<select id="select5" name="Select7" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate5"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >786744585</td>
+        <td>Hussmann, John A</td>
+        <td id="tdlastname8">
+		<select id="select6" name="Select8" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate6"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >866744585</td>
+        <td>Jacobs, Allen M</td>
+        <td id="tdlastname9">
+		<select id="select7" name="Select9" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate7"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >926744585</td>
+        <td>Maynard, Marcus J</td>
+        <td id="tdlastname10">
+		<select id="select8" name="Select10" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate8"   max="2023-09-26" /></td>
+      </tr>
+		<tr>
+        <td >106744585</td>
+        <td>Zorn, Walter A</td>
+        <td id="tdlastname11">
+		<select id="select9" name="Select11" >
+
+		<option selected="">Shipping</option>
+	<option>Ground</option>
+	<option>First Class</option>
+	<option>Priority Mail</option>
+	</select></td>
+        <td>
+		<input name="setTodaysDate" type="date"  class="date" type="date" id="setTodaysDate9"   max="2023-09-26" /></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+ <button style="display:none" onclick="sorttable.innerSortFunction.apply(document.getElementById('first_name'), []); document.getElementById('order#').style.width='60px' ">
+	Sort by First Name</button>
+  <button style="display:none" onclick="sorttable.innerSortFunction.apply(document.getElementById('nick_name'), [])">Sort
+  by 'Nick Name</button>
+
+
+
+
+
+
+<script type="text/javascript">//Do not allow a shipping date before today
+
+
+var today = new Date().toISOString().split('T')[0];
+document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[1].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[2].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[3].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[4].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[5].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[6].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[7].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[8].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[9].setAttribute('min', today);
+document.getElementsByName("setTodaysDate")[10].setAttribute('min', today);
+
+  //]]></script></body>
+
+</html>
