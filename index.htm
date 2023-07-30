@@ -27,7 +27,7 @@
 
 .container {
  
-  background: linear-gradient(to bottom,    #F5F5F5  95%,  #C0C0C0 100%);
+  background: linear-gradient(to bottom,    #F5F5F5  97%,  #D3D3D3 100%);
 
   color: var(--title-color);
 
@@ -421,9 +421,16 @@ $(document).ready(function () {
 
 
 
- <div class="container" style="  animation-name: fade-in-down; animation-duration: 2s;  ">
+ <div class="container" style=" position:relative;  animation-name: fade-in-down; animation-duration: 2s;  ">
+ 
+         <div class="ribbon ribbon-top-right"><span></span></div>
+  <div style=" z-index:1" class="ribbon ribbon-top-left"><span></span></div>
+
+
+ 
+ 
     <header class="perfil">
-      <img src="businesscard/pic.JPG" alt="" width="1010" height="1010">
+      <img  style="z-index:10" src="businesscard/pic.JPG" alt="" width="1010" height="1010">
       <div class="title">
         <h1>David Eden</h1>
         <h3>Senior UX Designer</h3>
@@ -442,6 +449,7 @@ $(document).ready(function () {
     <!-- estrutura do projeto -->
     <main class="projetos">
       <div class="container-projetos">
+      
       
         <p style="font-size:16px; font-weight:600; margin-bottom:-10px" class="line-1 anim-typewriter">Welcome</p>
         
