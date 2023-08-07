@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper" style="background:black">
+    <div class="swiper-wrapper" >
+    
+    
+      <div class="swiper-slide">
+            							
+								<p style=" font-size:15px; background: black; width: 100%;color: white; margin:auto; position:absolute; z-index:100; top: 0px">Dell IT Assistant low-fidelity wireframe</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(medium.png)">
+            </div>
+      
+      </div>
+  
+  
+  
+  
+  
+<div class="swiper-slide">
+            							
+								<p style=" font-size:15px;background: black; width: 100%;margin:auto; position:absolute; z-index:100; top: 0px" class="style1">
+								Dell IT Assistant edlines</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(medium2.png); ">
+            </div>
+      
+      </div>
+
+
+
+<div class="swiper-slide">
+            							
+								<p style=" font-size:15px;background: black; width: 100%;color: white; margin:auto; position:absolute; z-index:100; top: 0px">My Dell ITA high-fidelity prototype (in Visual Studio)</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(ITA1.png)">
+            </div>
+      
+      </div>
+
+
+
+
+
+<div class="swiper-slide">
+            							
+								<p style=" font-size:14px;background: black; width: 100%;color: white; margin:auto; position:absolute; z-index:100; top: 0px">Device operations on Treeview menus 
+								</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(ITA2.png)">
+            </div>
+      
+      </div>
+
+
+
+
+
+
+<div class="swiper-slide">
+            							
+								<p style=" font-size:14px;background: black; width: 100%;color: white; margin:auto; position:absolute; z-index:100; top: 0px">Device logs displayed in listview
+								</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(ITA3.png)">
+            </div>
+      
+      </div>
+
+
+<div class="swiper-slide">
+            							
+								<p style="background: black; width: 100%;color: white; margin:auto; position:absolute; z-index:100; top: 0px">Actual working product based on my design</p>	
+       <div 
+                class="slide-image" 
+                style="background-image: url(ITA6.png)">
+            </div>
+      
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+  <!-- Initialize Swiper -->
+ <!-- Initialize Swiper -->
+  <script type="module">
+    var swiper = new Swiper('.swiper', {
+      spaceBetween: 30,
+         slidesPerView: 1,
+            initialSlide: 0,
+          loop: true,
+          grabCursor: true,
+ observer: true,
+    observeParents: true,
+      speed: 500,
+      pagination: {
+        el: '.swiper-pagination',
+          type: 'fraction',
+        clickable: true,
+       
+        allowTouchMove: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+.swiper-pagination-fraction{
+bottom:2px;
+
+  box-shadow: inset 0 0 10px #C0C0C0;
+left:0;
+width:40px;
+color: white;
+font-size:16px;
+background:black;
+margin-left:45%;
+position:absolute;
+padding: 0px; 
+border-radius: 5px;
+border: 1px solid silver;
+
+}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: white;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      
+
+  transform: scale(1);  
+  opacity: 0;
+    
+    }
+    
+    
+.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+
+}
+    
+    
+.swiper-button-next {
+  background-image: url(next.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+ right: 10px;
+box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+   border-radius:50px;
+   height: 25px;
+   width: 25px;
+
+}
+
+
+.swiper-button-next::after {
+  display: none;
+}
+    
+    
+    
+    
+    .swiper-button-prev {
+  background-image: url(next.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+ left: 10px;
+ transform: rotate(180deg);
+ 
+   border-radius:50px;
+   height: 25px;
+   width: 25px;
+
+box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+
+}
+
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+    
+    
+    
+    
+.slide-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20px;
+   
+}
+
+  .style1 {
+	color: white;
+}
+
+  </style>
+</body>
+
+</html>
