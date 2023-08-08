@@ -9,6 +9,8 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
  
 html {
   height: 100%;
@@ -552,6 +554,7 @@ position: absolute;
 @media (max-width: 576px) {
   .episode__content .story {
     font-size: 15px;
+
   }
 }
 
