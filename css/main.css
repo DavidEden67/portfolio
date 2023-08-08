@@ -520,10 +520,20 @@ position: absolute;
   height: calc(10vw + 20px);
   transition: all 0.2s ease-in;
   
-
-
-
 }
+
+
+
+@media (max-width: 960px) {
+.episode__number{
+font-size: 3vw;
+  padding-top: 47px;
+  }
+}
+
+
+
+
 
 .episode__content {
   border-top: 0px solid #fff;
@@ -543,6 +553,8 @@ position: absolute;
 }
 
 
+
+
 @media (max-width: 600px) {
   .episode__content {
     grid-template-columns: 1fr;
@@ -550,6 +562,10 @@ position: absolute;
 
   }
 }
+
+
+
+
 
 @media (max-width: 576px) {
   .episode__content .story {
