@@ -106,11 +106,12 @@ background: #EDEDED;
  
 }
 
-.imglogoimage{
-padding-top: 14px ;
-width: 46px; 
-height: auto; 
-
+.logoimage{
+ margin-bottom:-6px; 
+ margin-left:2px; 
+ margin-right:-3px; 
+ width:60px; 
+ height:auto;
 				
 }
 
