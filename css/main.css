@@ -96,8 +96,11 @@ padding-top: 20px;
 text-align: center;
 padding-bottom: 0px;
 
-background: rgb(129,121,125);
-background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);
+background: #EDEDED;
+
+
+/*     background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);      */
+
 
 
    
