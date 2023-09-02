@@ -67,7 +67,7 @@ FONT-SIZE: 16px; /* main font size 16px*/
 
 
 color : #000000;
-font-weight: normal;
+font-weight: 425;
 text-align: justify;
 width: auto;
 
@@ -616,7 +616,7 @@ font-size: 3vw;
 .ribbon-top-left {
   top: 0px;
   left:0px;
-      background-image:  linear-gradient(to top left, #F4F4F4   85%,  #d2d2d2 100%);
+      background-image:  linear-gradient(to top left, #eeefe9   85%,  #d2d2d2 100%);
       opacity: .3;
 
 
@@ -626,7 +626,7 @@ font-size: 3vw;
 .ribbon-top-right {
   top: 0px;
   right: 0px;
-    background-image:  linear-gradient(to top right,  #F4F4F4   85%,  #d2d2d2  100%);
+    background-image:  linear-gradient(to top right,  #eeefe9  85%,  #d2d2d2  100%);
       opacity: .3;
 }
 
