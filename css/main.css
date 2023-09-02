@@ -96,10 +96,10 @@ padding-top: 20px;
 text-align: center;
 padding-bottom: 0px;
 
-background: #EDEDED;
+background: #ebebea;
 
-
- background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);      
+background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  
+    
 
  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
  
@@ -237,7 +237,9 @@ display: none;
 padding-top: 0px;
 padding-bottom: 10px;
 height: 80px;
-background: #555;
+background: #3e3e3e; /* used to be #555 */
+
+
 color: #f1f1f1;
  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
  position: relative;
