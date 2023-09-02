@@ -299,7 +299,7 @@ $(document).ready(function () {
 
 
 
-<div class="top-container" >
+<div class="top-container" style="left: 0px; top: 0px" >
 
 
 
@@ -338,7 +338,7 @@ $(document).ready(function () {
 					</tr>
 	</table>
 
-  
+    <div id="curve_shadow"></div>
 </div>
 
 
@@ -349,7 +349,7 @@ $(document).ready(function () {
 
 
 
-<div class="header" id="myHeader">
+<div class="header" id="myHeader" style="left: 0px; top: 0px">
 
 
 
@@ -584,14 +584,16 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementById('scrolltitle').style.display='block';
+    document.getElementById('scrolltitle').style.display='none';
+    
+ document.getElementById('curve_shadow').style.display='none';
   } else {
     header.classList.remove("sticky");
-        document.getElementById('scrolltitle').style.display='none';
+        document.getElementById('scrolltitle').style.display='block';
+         document.getElementById('curve_shadow').style.display='block';
   }
 }
 </script>
-
 
 
 <!-- Activate bubble onclick -->
