@@ -238,13 +238,28 @@ padding-top: 0px;
 padding-bottom: 10px;
 height: 80px;
 background: #3e3e3e; /* used to be #555 */
-
+ box-shadow: ; /* 0 5px 8px rgba(0, 0, 0, 0.3); */
 
 color: #f1f1f1;
- box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+
  position: relative;
 
 }
+
+
+#curve_shadow {
+     width: 100%;
+     height: 30px;
+     margin: 0 auto;
+     position: absolute;
+
+     left: 0%;
+  background-color: rgba(0, 0, 0, 0.0);
+   bottom: -90px;
+  box-shadow: 0 0px 15px 12px rgba(100,100,100,50%);
+  border-radius: 450px / 15px;}
+
+
 
 
 /* this is where the sticky class header appears in the static class */
