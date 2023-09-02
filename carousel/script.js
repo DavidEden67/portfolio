@@ -5,7 +5,7 @@
 // You can change global variables here:
 var radius = 240; // how big of the radius
 var autoRotate = true; // auto rotate or not
-var rotateSpeed = -360; // unit: seconds/360 degrees
+var rotateSpeed = -1000; // speed unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 120; // height of images (unit: px)
 
