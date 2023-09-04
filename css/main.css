@@ -96,10 +96,11 @@ padding-top: 20px;
 text-align: center;
 padding-bottom: 0px;
 
-background: #ebebea;
 
-background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  
-    
+
+  /*background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  */
+background: rgb(231,230,221);
+background: radial-gradient(circle, rgba(231,230,221,1) 0%, rgba(178,178,168,1) 100%);
 
  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
  
@@ -616,7 +617,7 @@ font-size: 3vw;
 .ribbon-top-left {
   top: -1px;
   left:-1px;
-      background-image:  linear-gradient(to top left,  #e7e6dd    85%,  #C0C0C0 100%);
+      background-image:  linear-gradient(to top left,  #f5f5f5   85%,  #C0C0C0 100%);
       opacity: .2;
  border-radius:10px;
 
@@ -626,7 +627,7 @@ font-size: 3vw;
 .ribbon-top-right {
   top: 0px;
   right: 0px;
-    background-image:  linear-gradient(to top right,  #e7e6dd  85%, #C0C0C0 100%);
+    background-image:  linear-gradient(to top right,  #f5f5f5  85%, #C0C0C0 100%);
       opacity: .2;
  border-radius:10px;
 }
