@@ -91,10 +91,10 @@ line-height:140%; /* line spacing for paragraph*/
 
  
   .top-container {
-height: 80px;  /* Used to be 100 with the logo*/
-padding-top: 20px;
-text-align: center;
-padding-bottom: 0px;
+height: 100px;  /* Used to be 100 with the logo*/
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
 
 
 
@@ -102,7 +102,7 @@ padding-bottom: 0px;
 background: rgb(231,230,221);
 background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1) 100%);
 
- padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
  
  
 }
@@ -111,7 +111,7 @@ background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1)
  margin-bottom:-6px; 
  margin-left:2px; 
  margin-right:-3px; 
- width:60px; 
+ width:70px; 
  height:auto;
 				
 }
@@ -169,9 +169,9 @@ margin: 0;
 font-family: 'Red Hat Mono', monospace;
 
 
-color:   #313131;
+color:   #000000;
 
-font-size:32px;
+font-size:36px;
  word-spacing: -10px;
  font-stretch: expanded;
 
@@ -238,7 +238,7 @@ display: none;
 padding-top: 0px;
 padding-bottom: 10px;
 height: 80px;
-background: #3e3e3e; /* used to be #555 */
+background: #3e3e3e; /* used to be #3e3e3e */
  box-shadow: ; /* 0 5px 8px rgba(0, 0, 0, 0.3); */
 
 color: #f1f1f1;
