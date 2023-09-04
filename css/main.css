@@ -100,7 +100,7 @@ padding-bottom: 0px;
 
   /*background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  */
 background: rgb(231,230,221);
-background: radial-gradient(circle, rgba(231,230,221,1) 0%, rgba(178,178,168,1) 100%);
+background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1) 100%);
 
  padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
  
