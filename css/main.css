@@ -617,7 +617,7 @@ font-size: 3vw;
 .ribbon-top-left {
   top: -1px;
   left:-1px;
-      background-image:  linear-gradient(to top left,  #f5f5f5   85%,  #C0C0C0 100%);
+      background-image:  linear-gradient(to top left, #EEF0F3   85%,  #C0C0C0 100%);
       opacity: .2;
  border-radius:10px;
 
@@ -627,7 +627,7 @@ font-size: 3vw;
 .ribbon-top-right {
   top: 0px;
   right: 0px;
-    background-image:  linear-gradient(to top right,  #f5f5f5  85%, #C0C0C0 100%);
+    background-image:  linear-gradient(to top right,  #EEF0F3  85%, #C0C0C0 100%);
       opacity: .2;
  border-radius:10px;
 }
