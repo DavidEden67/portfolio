@@ -109,9 +109,9 @@ border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); b
 }
 
 .logoimage{
- margin-bottom:-6px; 
+ margin-bottom:-5px; 
  margin-left:2px; 
- margin-right:-3px; 
+ margin-right:-7px; 
  width:45px; 
  height:auto;
 				
@@ -650,4 +650,3 @@ font-size: 3vw;
   background-image:  linear-gradient(to bottom right,  #F5F5F5  85%,  #d2d2d2  100%);
         opacity: .5;
 }
-
