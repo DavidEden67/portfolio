@@ -37,6 +37,9 @@ nav a.linkselected { /*a new instance created for nav a when a link is selected 
   color: inherit;
 text-shadow: none;
 cursor:default;
+line-height:135%;
+
+
   
 }
 

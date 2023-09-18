@@ -67,7 +67,7 @@ FONT-SIZE: 16px; /* main font size 16px*/
 
 
 color : #000000;
-font-weight: 425;
+font-weight: normal;
 text-align: justify;
 width: auto;
 
@@ -91,35 +91,26 @@ line-height:140%; /* line spacing for paragraph*/
 
  
   .top-container {
-height: 100px;  /* Used to be 100 with the logo*/
-    padding-top: 20px;
-    margin: 0;
-    display: flex;
+height: 80px;  /* Used to be 100 with the logo*/
+padding-top: 20px;
+text-align: center;
+padding-bottom: 0px;
+
+background: #EDEDED;
 
 
+ background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);      
 
-
-  /*background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  */
-background: rgb(231,230,221);
-background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1) 100%);
-
-border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+ padding-right: 0.9em !important; padding-bottom: 0.15em; border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
  
  
- border-bottom:1px solid black;
-
-}
-
-
-.topnavigationlinks {
-	margin-top: -6px!important;
 }
 
 .logoimage{
  margin-bottom:-6px; 
  margin-left:2px; 
- margin-right:-5px; 
- width:45px; 
+ margin-right:-3px; 
+ width:60px; 
  height:auto;
 				
 }
@@ -175,11 +166,11 @@ text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
 margin: 0;
 
 font-family: 'Red Hat Mono', monospace;
+font-weight: 400;
 
+color:   #313131;
 
-color:   #000000;
-
-font-size:36px;
+font-size:32px;
  word-spacing: -10px;
  font-stretch: expanded;
 
@@ -246,29 +237,12 @@ display: none;
 padding-top: 0px;
 padding-bottom: 10px;
 height: 80px;
-background: #24350C; /* used to be #3e3e3e */
- box-shadow: ; /* 0 5px 8px rgba(0, 0, 0, 0.3); */
-
-color: #ffffff;
-
+background: #555;
+color: #f1f1f1;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
  position: relative;
 
 }
-
-
-#curve_shadow {
-     width: 100%;
-     height: 30px;
-     margin: 0 auto;
-     position: absolute;
-
-     left: 0%;
-  background-color: rgba(0, 0, 0, 0.0);
-   bottom: -85px;
-  box-shadow: 0 0px 15px 12px rgba(100,100,100,50%);
-  border-radius: 450px / 15px;}
-
-
 
 
 /* this is where the sticky class header appears in the static class */
@@ -623,11 +597,11 @@ font-size: 3vw;
 
 /* top left*/
 .ribbon-top-left {
-  top: -1px;
-  left:-1px;
-      background-image:  linear-gradient(to top left, #EEF0F3   85%,  #C0C0C0 100%);
-      opacity: .2;
- border-radius:10px;
+  top: 0px;
+  left:0px;
+      background-image:  linear-gradient(to top left, #F4F4F4   85%,  #d2d2d2 100%);
+      opacity: .3;
+
 
 }
 
@@ -635,9 +609,8 @@ font-size: 3vw;
 .ribbon-top-right {
   top: 0px;
   right: 0px;
-    background-image:  linear-gradient(to top right,  #EEF0F3  85%, #C0C0C0 100%);
-      opacity: .2;
- border-radius:10px;
+    background-image:  linear-gradient(to top right,  #F4F4F4   85%,  #d2d2d2  100%);
+      opacity: .3;
 }
 
 /* bottom left*/
@@ -657,3 +630,4 @@ font-size: 3vw;
   background-image:  linear-gradient(to bottom right,  #F5F5F5  85%,  #d2d2d2  100%);
         opacity: .5;
 }
+
