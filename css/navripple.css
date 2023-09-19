@@ -49,6 +49,7 @@ nav a:hover {
 
 	color: #fff;
 	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+	transform: scale(1.03);
 }
 
 nav a.linkselected:hover { /* remote text shadow for selected link */
@@ -443,6 +444,9 @@ nav a:last-child:before {
   
 
 }
+
+
+
 
 .ripple:after {
   content: "";

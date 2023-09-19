@@ -103,16 +103,11 @@ height: 100px;  /* Used to be 100 with the logo*/
 background: rgb(231,230,221);
 background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1) 100%);
 
-border-top-color: rgb(242, 242, 242); border-bottom-color: rgb(140, 140, 140); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
- 
- 
-
-
 }
 
 
 .topnavigationlinks {
-	margin-top: -6px!important;
+	margin-top: -8px!important;
 }
 
 .logoimage{
@@ -245,15 +240,21 @@ display: none;
 .header {
 padding-top: 0px;
 padding-bottom: 10px;
-height: 78px;
+height: 70px;
 background: #24350C; /* used to be #3e3e3e */
  box-shadow: ; /* 0 5px 8px rgba(0, 0, 0, 0.3); */
 
 color: #ffffff;
 
  position: relative;
+ 
+  
  border-bottom:1px solid black;
-  border-top:1px solid black;
+  
+ border-top:1px solid black;
+
+
+
 }
 
 
@@ -299,8 +300,6 @@ transition: 0.8s;
 transition-timing-function: ease;
 
 z-index:900;
-
-
 }
 
 
@@ -336,7 +335,7 @@ visibility: hidden;
 
 /* This is the table where the navigation elements appear*/
 #navigationtable{
-margin-top: 0px;
+margin-top: -5px;
 width:auto; 	
 
 				
