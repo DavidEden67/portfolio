@@ -92,8 +92,8 @@ line-height:140%; /* line spacing for paragraph*/
  
   .top-container {
 height: 100px;  /* Used to be 100 with the logo*/
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 0px;
+    margin-top: 20px;  /* For box shadow top*/
     display: flex;
 
 
