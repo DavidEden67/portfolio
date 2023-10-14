@@ -1,0 +1,672 @@
+﻿
+
+/* New Instance of h3 created*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+ 
+html {
+  height: 100%;
+}
+
+
+P {
+  margin: 10px;
+}
+
+
+
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+min-height: 100%;
+margin: 0;
+
+
+/*background:  #FDFDFD or #FFFDFA ;*/
+background-Color:    #FDFDFD  ;
+
+margin-top:-30px;
+animation: fadeIn ease 1s; 
+animation-iteration-count: 1; 
+
+
+-webkit-user-select: none;
+
+-webkit-touch-callout: none;
+
+-moz-user-select: none;
+
+-ms-user-select: none;
+
+user-select: none;
+
+
+}
+
+
+
+/* main content area below the static headers*/
+.content {
+padding-left: 35px;
+padding-top: 16px;
+padding-right: 50px;
+padding-bottom: 16px;
+
+font-family: Arial, Helvetica, sans-serif;
+FONT-SIZE: 16px; /* main font size 16px*/
+
+
+
+color : #000000;
+font-weight: 425;
+text-align: justify;
+width: auto;
+
+text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+background-Color:   #FDFDFD ;
+
+
+
+line-height:140%; /* line spacing for paragraph*/
+
+}
+
+
+
+
+
+
+
+
+
+ 
+  .top-container {
+height: 100px;  /* Used to be 100 with the logo*/
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+
+
+
+
+  /*background: radial-gradient(circle, rgba(229,221,225,0.5444123083803833) 0%, rgba(166,163,167,1) 100%);  
+
+background: radial-gradient(circle, rgba(231,230,221,1) 50%, rgba(178,178,168,1) 100%);*/
+background: #f1f0e5;
+
+ box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.topnavigationlinks {
+	margin-top: -8px!important;
+}
+
+.logoimage{
+ margin-bottom:-6px; 
+ margin-left:2px; 
+ margin-right:-5px; 
+ width:45px; 
+ height:auto;
+				
+}
+
+
+h4.h4scrollindicator{  /* New Instance of h4 for jquery scroll indicator*/
+margin-bottom: -10px;
+margin-left: 10px;	
+font-size:16px;			
+}
+
+
+
+
+
+
+
+
+
+/* tables and cells which contain the logo */
+
+#logotable{
+vertical-align:bottom;		
+margin-bottom:10px;		
+}
+
+#logotabletd{
+vertical-align:bottom;;				
+}
+
+#logotableinsidetable{
+margin-bottom: 0px;				
+}
+
+#tduxlogoimage{
+
+padding-left:25px;
+vertical-align:bottom;
+}
+
+#sitetagline{
+margin-bottom:-15px; 
+margin-left: -40px;  
+font-family: Aharoni;
+font-size: 16px; 
+text-shadow: rgba(0,0,0,0.9) 0px 1px 1px;
+				
+}
+
+
+/* this is the style for the logo text */
+.logotext {
+margin: 0;
+
+font-family: 'Red Hat Mono', monospace;
+
+
+color:   #000000;
+
+font-size:36px;
+ word-spacing: -10px;
+ font-stretch: expanded;
+
+text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
+             0px 19px 19px rgba(0,0,0,0.1),
+             1px 1px 0px rgba(0,0,0,0.1);
+-webkit-transition: .2s all linear;
+outline: none;
+
+}
+
+
+
+.logotext2 {
+margin: 0;
+font-weight: bold ;
+font-family: Aharoni;
+color:   #313131;
+font-size:30px;
+text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
+             0px 19px 19px rgba(0,0,0,0.1),
+             2px 2px 0px rgba(0,0,0,0.1);
+-webkit-transition: .2s all linear;
+outline: none;
+ 
+}
+
+
+
+
+/* New Instance of h3 for the tagline*/
+h3.h3custom {
+margin-bottom:-9px; 
+margin-left: -9px;  
+font-size:13px;
+ font-family: 'Quicksand', sans-serif;
+
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
+             0px 19px 19px rgba(0,0,0,0.1),
+             2px 2px 0px rgba(0,0,0,0.1);
+
+} 
+
+
+
+
+
+
+.tableux{
+margin-top:-15px; 
+width: 100%;
+margin-left:-10px;
+display: none;
+				
+}
+
+
+
+
+
+
+/* this is where the static header appears in the normal class */
+.header {
+padding-top: 0px;
+padding-bottom: 10px;
+height: 70px;
+background: #24350C; /* used to be #3e3e3e */
+ box-shadow: ; /* 0 5px 8px rgba(0, 0, 0, 0.3); */
+
+color: #ffffff;
+
+ position: relative;
+ 
+  
+ border-bottom:1px solid black;
+  
+ border-top:1px solid black;
+
+
+
+}
+
+
+#curve_shadow {
+     width: 100%;
+     height: 30px;
+     margin: 0 auto;
+     position: absolute;
+
+     left: 0%;
+  background-color: rgba(0, 0, 0, 0.3);
+top: 138px;
+  box-shadow: 0 0px 15px 12px rgba(100,100,100,50%);
+  border-radius: 450px / 15px;}
+
+
+
+
+/* this is where the sticky class header appears in the static class */
+.sticky {
+padding-top: 5px;
+padding-bottom: 10px;
+
+position: fixed;
+top: 0;
+width: 100%;
+box-shadow:0 5px 10px #000;
+-moz-box-shadow:0 5px 10px #000;
+-webkit-box-shadow:0 5px 10px #000;
+	
+	
+<!-- https://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28left\%2C\%20rgba\%28248\%2C80\%2C50\%2C1\%29\%200\%25\%2C\%20rgba\%28241\%2C111\%2C92\%2C1\%29\%2050\%25\%2C\%20rgba\%28246\%2C41\%2C12\%2C1\%29\%2051\%25\%2C\%20rgba\%28240\%2C47\%2C23\%2C1\%29\%2071\%25\%2C\%20rgba\%28231\%2C56\%2C39\%2C1\%29\%20100\%25\%29\%3B' -->
+	background: rgba(76,76,76,1);
+background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 0%, rgba(28,28,28,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(74,74,74,1) 0%, rgba(102,102,102,1) 1%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(0%, rgba(44,44,44,1)), color-stop(0%, rgba(0,0,0,1)), color-stop(0%, rgba(17,17,17,1)), color-stop(0%, rgba(43,43,43,1)), color-stop(0%, rgba(28,28,28,1)), color-stop(0%, rgba(89,89,89,1)), color-stop(0%, rgba(71,71,71,1)), color-stop(0%, rgba(74,74,74,1)), color-stop(1%, rgba(102,102,102,1)), color-stop(100%, rgba(19,19,19,1)));
+background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 0%, rgba(28,28,28,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(74,74,74,1) 0%, rgba(102,102,102,1) 1%, rgba(19,19,19,1) 100%);
+background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 0%, rgba(28,28,28,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(74,74,74,1) 0%, rgba(102,102,102,1) 1%, rgba(19,19,19,1) 100%);
+background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 0%, rgba(28,28,28,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(74,74,74,1) 0%, rgba(102,102,102,1) 1%, rgba(19,19,19,1) 100%);
+background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 0%, rgba(28,28,28,1) 0%, rgba(89,89,89,1) 0%, rgba(71,71,71,1) 0%, rgba(74,74,74,1) 0%, rgba(102,102,102,96%) 1%, rgba(19,19,19,96%) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+
+transition: 0.8s;
+transition-timing-function: ease;
+
+z-index:900;
+}
+
+
+
+.sticky {
+padding-top: 10px;
+}
+
+
+
+/* This is for the David Eden Portfolio title that appears when the sticky header shows and its animation*/
+#scrolltitle{
+-webkit-animation-duration: .5s;
+animation-duration: .5s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;	        
+margin-left: 10px; margin-top: 25px; float:left; position: absolute; display:none;      
+visibility: hidden;       
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+         
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+
+/* This is the table where the navigation elements appear*/
+#navigationtable{
+margin-top: -5px;
+width:auto; 	
+
+				
+}
+
+#tdnavigationtab{
+ text-align:center;				
+}
+
+#tablenavigationlinks{ 
+
+margin:0 auto;  /* This will allow you to center the table using margin auto, and to replace margin-top with top with position relative*/
+position:relative;
+Top: -20px;				
+}
+
+
+
+
+/* page title in the content area*/
+.pagetitle {
+font-family: "Trebuchet MS";
+font-size: 18px;
+margin-bottom: -5px;
+
+}
+
+
+
+
+
+
+/* This defines the animated tab attritubtes for About Me and My Work */
+ol {
+  padding-left: 0;
+}
+ol li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+transition: all 200ms ease-in-out ;
+}
+
+ol li:hover {
+    transform: scale(1.05);
+	
+}
+
+
+ol li.selected {
+  color: white;
+  font-weight:bold;
+  border-radius: 1em;
+  -webkit-transition: 0.08s 0.2s ease-in;
+}
+ol li.bubble {
+  position: absolute;
+  border-radius: 1em;
+  left: 0;
+  background-color:   #9900CC;
+  margin: 0px 5px;
+  padding: 5px 20px;
+  z-index: 1;
+  -webkit-transition: .2s ease-in-out;
+}
+
+
+
+/* image zooming on hover for the myucdcycle page */
+
+.zoom {
+
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+    transition: all 200ms ease-in;
+   
+  
+}
+
+.zoom:hover {
+padding-left: 50px ;
+
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(3);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(3);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(3);
+    transition: all 200ms ease-in;
+    transform: scale(3);
+     transition: transform 500ms cubic-bezier(0.25, 0.25, 0.5, 1.6);
+
+    background-color:transparent;
+
+
+   }
+
+.zoom::before,
+.zoom::after {
+  height: $size;
+  left: 0;
+  transform: scaleY(0);
+  width: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+ /* iPad iPad iPad iPad iPad iPad iPad iPad */ 
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: portrait){
+  
+
+
+
+nav a {
+  font-size:18px;
+
+}
+
+
+ol li {
+  font-size:20px;
+  }
+  
+  
+  
+  
+}
+  
+  
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: landscape){
+ 
+
+
+
+nav a {
+  font-size:18px;
+
+}
+
+
+ol li {
+  font-size:20px;
+  }
+
+  #tablenavigationlinks{ 
+Top: -25px;				
+}
+
+
+}
+
+
+
+
+
+.effect8
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            border-radius: 1%;
+}
+
+
+
+/*Sticky position*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+</style>
+
+
+.center { text-align: center; }
+
+.container2 {
+  width: 90%;
+  margin-left:0px;
+  text-align:justify;
+  
+  
+
+ }
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+
+
+}
+
+.episode__number {
+ /* font-size: 3vw; */
+ font-family: 'Bubblegum Sans', cursive;
+ 
+ font-size:30px;
+  font-weight: 600;
+  padding: 10px 0;
+  
+  
+position: absolute;
+  position: sticky;
+  
+  top: 65px;  
+  padding-top: 40px;
+  
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+  
+}
+
+
+
+@media (max-width: 960px) {
+.episode__number{
+font-size: 3vw;
+  padding-top: 47px;
+  }
+}
+
+
+
+
+
+.episode__content {
+  border-top: 0px solid #fff;
+  display: grid;
+
+  grid-gap: 10px;
+  padding: 15px 0;
+  
+  font-size:16px;
+  letter-spacing: 0.05em!important;
+  word-spacing:0.00em!important;
+ 
+  margin-left:0px;
+  
+  line-height: 150%;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+    border-width: 0;
+
+  }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+
+  }
+}
+
+
+.titlesticky{
+	visibility:hidden;
+}
+
+
+
+
+/* Home page corners */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  background:  #F5F5F5 ;
+      border-radius: 5px;
+      z-index:0;
+
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -1px;
+  left:-1px;
+      background-image:  linear-gradient(to top left, #EEF0F3   85%,  #C0C0C0 100%);
+      opacity: .2;
+ border-radius:10px;
+
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: 0px;
+  right: 0px;
+    background-image:  linear-gradient(to top right,  #EEF0F3  85%, #C0C0C0 100%);
+      opacity: .2;
+ border-radius:10px;
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: 0px;
+  left: 0px;
+  background-image:  linear-gradient(to bottom left,  #FFFFF0  85%,  #d2d2d2  100%);
+        opacity: .5;
+}
+
+
+
+/* bottom right    transform: rotate(-225deg);*/
+.ribbon-bottom-right {
+  bottom: 0px;
+  right: 0px;
+  background-image:  linear-gradient(to bottom right,  #F5F5F5  85%,  #d2d2d2  100%);
+        opacity: .5;
+}
