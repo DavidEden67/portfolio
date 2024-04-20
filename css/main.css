@@ -305,6 +305,9 @@ transition: 0.8s;
 transition-timing-function: ease;
 
 z-index:900;
+
+transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.83);
+transition-duration: .5s;
 }
 
 
